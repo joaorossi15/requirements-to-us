@@ -5,18 +5,20 @@ from langchain.chains import LLMChain
 from langchain.vectorstores.chroma import Chroma
 from langchain_core.runnables import RunnablePassthrough
 from transformers import AutoModelForCausalLM
+from peft import PeftModel, PeftConfig
 from rag.rag import generate_store
 import transformers
 
 def load_model():
-    mistral = AutoModelForCausalLM.from_pretrained("joaorossi15/mistral-7B-ai-ethics")
+    mistral = AutoModelForCausalLM.from_pretrained("TheBloke/Mistral-7B-Instruct-v0.2-GPTQ")
+    model = PeftModel.from_pretrained(mistral, "joaorossi15/mistral-7B-ai-ethics")
     return mistral
 
 def model_rag(req: str, persist_path: str):
     model = load_model()
     text_generation_pipeline = transformers.pipeline(
         model=model,
-        tokenizer=transformers.AutoTokenizer.from_pretrained("joaorossi15/mistral-7B-ai-ethics"),
+        tokenizer=transformers.AutoTokenizer.from_pretrained("TheBloke/Mistral-7B-Instruct-v0.2-GPTQ"),
         task="text-generation",
         temperature=0.2,
         repetition_penalty=1.1,
