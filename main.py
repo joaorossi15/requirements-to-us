@@ -4,12 +4,12 @@ from langchain.embeddings.huggingface import HuggingFaceEmbeddings
 from langchain.chains import LLMChain
 from langchain.vectorstores.chroma import Chroma
 from langchain_core.runnables import RunnablePassthrough
-from transformers import TFAutoModel
+from transformers import AutoModelForCausalLM
 from rag.rag import generate_store
 import transformers
 
 def load_model():
-    mistral = TFAutoModel.from_pretrained('./model-trained/', local_files_only=True)
+    mistral = AutoModelForCausalLM.from_pretrained('./model-trained/', local_files_only=True)
     return mistral
 
 def model_rag(path: str, req: str):
