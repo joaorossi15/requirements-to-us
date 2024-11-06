@@ -19,18 +19,10 @@ def split_text(docs: list[Document]):
             "\n\n",
             "\\n",
             "\n",
-            " ",
             ".",
-            ",",
-            "\u200b",  # Zero-width space
-            "\uff0c",  # Fullwidth comma
-            "\u3001",  # Ideographic comma
-            "\uff0e",  # Fullwidth full stop
-            "\u3002",  # Ideographic full stop
-            "",
         ],
-        chunk_size=100,
-        chunk_overlap=20,
+        chunk_size=200,
+        chunk_overlap=70,
         length_function=len,
     )
 
