@@ -3,8 +3,8 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter # Importing t
 from langchain.embeddings import OpenAIEmbeddings # Importing OpenAI embeddings from Langchain
 from langchain.schema import Document # Importing Document schema from Langchain
 from langchain.vectorstores.chroma import Chroma # Importing Chroma vector store from Langchain
+from langchain.embeddings.huggingface import HuggingFaceEmbeddings
 from dotenv import load_dotenv # Importing dotenv to get API key from .env file
-from langchain.chat_models import ChatOpenAI # Import OpenAI LLM
 import os # Importing os module for operating system functionalities
 import shutil # Importing shutil module for high-level file operations
 
@@ -34,9 +34,10 @@ def chroma(chunks: list[Document]):
     if os.path.exists(path):
         shutil.rmtree(path)
 
-    db = Chroma.from_documents(chunks, 
-                               # EMBEDDING, 
-                               persist_directory=path)
+    db = Chroma.from_documents(
+            chunks, 
+            HuggingFaceEmbeddings(model_name='sentence-transformers/all-mpnet-base-v2'), 
+            persist_directory=path)
     
     db.persist()
     print(f'Saved {len(chunks)} chunks to {path}')
@@ -47,16 +48,3 @@ def generate_store(path: str):
     chunks = split_text(documents)
     chroma(chunks)
 
-
-def query_rag(query: str):
-    # embedding function
-    # prepare database
-    # results of query
-    # check matching results
-    # combine context
-    # create template
-    # initialize model
-    # generate response
-    # get source of the matching docs
-    # format and return response
-    pass
