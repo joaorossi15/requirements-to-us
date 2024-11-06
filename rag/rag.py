@@ -47,5 +47,4 @@ def generate_store(path: str):
     chunks = split_text(documents)
     chroma(chunks)
 
-generate_store('/home/joaorossi/us-translator/rag-data')
 
