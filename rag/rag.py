@@ -15,10 +15,23 @@ def load_documents(dir: str):
 def split_text(docs: list[Document]):
 
     text_splitter = RecursiveCharacterTextSplitter(
-        chunk_size=300,
-        chunk_overlap=100,
+        separators=[
+            "\n\n",
+            "\\n",
+            "\n",
+            " ",
+            ".",
+            ",",
+            "\u200b",  # Zero-width space
+            "\uff0c",  # Fullwidth comma
+            "\u3001",  # Ideographic comma
+            "\uff0e",  # Fullwidth full stop
+            "\u3002",  # Ideographic full stop
+            "",
+        ],
+        chunk_size=100,
+        chunk_overlap=20,
         length_function=len,
-        add_start_index=True,
     )
 
     chunks = text_splitter.split_documents(docs)
