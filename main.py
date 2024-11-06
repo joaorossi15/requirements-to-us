@@ -12,7 +12,7 @@ import transformers
 def load_model():
     mistral = AutoModelForCausalLM.from_pretrained("TheBloke/Mistral-7B-Instruct-v0.2-GPTQ")
     model = PeftModel.from_pretrained(mistral, "joaorossi15/mistral-7B-ai-ethics")
-    return mistral
+    return model
 
 def model_rag(req: str, persist_path: str):
     model = load_model()
