@@ -14,7 +14,7 @@ def load_model():
     model = PeftModel.from_pretrained(mistral, "joaorossi15/mistral-7B-ai-ethics")
     return model
 
-def model_rag(req: str, persist_path: str):
+def model_rag(persist_path: str):
     model = load_model()
     text_generation_pipeline = transformers.pipeline(
         model=model,
@@ -50,10 +50,6 @@ def model_rag(req: str, persist_path: str):
 
     db = Chroma(persist_directory=persist_path, embedding_function=HuggingFaceEmbeddings(model_name='sentence-transformers/all-mpnet-base-v2'))
 
-    rag_chain = ({
-                "context": db.as_retriever(search_type="similarity_score_threshold", search_kwargs={'score_threshold': 0.8}), 
-                "requirement": RunnablePassthrough()
-            } | llm_chain)
+    rag_chain = ({"context": db.as_retriever(search_type="similarity_score_threshold", search_kwargs={'score_threshold': 0.8}), "requirement": RunnablePassthrough()} | llm_chain)
             
-    rag_chain.invoke(req)
-
+    return rag_chain
