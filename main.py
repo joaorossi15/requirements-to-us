@@ -12,8 +12,7 @@ def load_model():
     mistral = AutoModelForCausalLM.from_pretrained("joaorossi15/mistral-7B-ai-ethics")
     return mistral
 
-def model_rag(path: str, req: str):
-    generate_store(path)
+def model_rag(req: str):
     model = load_model()
     text_generation_pipeline = transformers.pipeline(
         model=model,
@@ -53,4 +52,3 @@ def model_rag(path: str, req: str):
     rag_chain = ({"context": results, "requirement": RunnablePassthrough()} | llm_chain)
     rag_chain.invoke(req)
 
-model_rag(path="./rag-data/", req="The user need an authentication token to login.")
