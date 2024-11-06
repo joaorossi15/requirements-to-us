@@ -27,9 +27,7 @@ def split_text(docs: list[Document]):
     return chunks
 
 
-def chroma(chunks: list[Document]):
-    path = './chroma/'
-
+def chroma(chunks: list[Document], path: str):
     if os.path.exists(path):
         shutil.rmtree(path)
 
@@ -42,9 +40,9 @@ def chroma(chunks: list[Document]):
     print(f'Saved {len(chunks)} chunks to {path}')
 
 
-def generate_store(path: str):
+def generate_store(path: str, chroma_path: str):
     documents = load_documents(path)
     chunks = split_text(documents)
-    chroma(chunks)
+    chroma(chunks, chroma_path)
 
 

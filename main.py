@@ -12,7 +12,7 @@ def load_model():
     mistral = AutoModelForCausalLM.from_pretrained("joaorossi15/mistral-7B-ai-ethics")
     return mistral
 
-def model_rag(req: str):
+def model_rag(req: str, persist_path: str):
     model = load_model()
     text_generation_pipeline = transformers.pipeline(
         model=model,
@@ -45,7 +45,7 @@ def model_rag(req: str):
 
     llm_chain = LLMChain(llm=mistral_llm, prompt=prompt)
 
-    db = Chroma(persist_directory='./chroma/', embedding_function=HuggingFaceEmbeddings(model_name='sentence-transformers/all-mpnet-base-v2'))
+    db = Chroma(persist_directory=persist_path, embedding_function=HuggingFaceEmbeddings(model_name='sentence-transformers/all-mpnet-base-v2'))
     query = f'[INST] Transform the requirement below into a one line brief description of an ethical user story \\n{req} [/INST]'
     results = db.similarity_search_with_relevance_scores(query, k=3)
 
