@@ -24,7 +24,7 @@ def model_rag(req: str, persist_path: str):
         repetition_penalty=1.1,
         return_full_text=True,
         max_new_tokens=300,
-        device=auto
+        device=0
     )
 
     prompt_template = """
