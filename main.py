@@ -6,7 +6,6 @@ from langchain.vectorstores.chroma import Chroma
 from langchain_core.runnables import RunnablePassthrough
 from transformers import AutoModelForCausalLM
 from peft import PeftModel, PeftConfig
-from rag.rag import generate_store
 import transformers
 
 def load_model():
