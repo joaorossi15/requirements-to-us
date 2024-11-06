@@ -41,11 +41,11 @@ def model_rag(persist_path: str):
     
     prompt_template = """
     ### [INST] 
-    Instruction: Basing your answer on the AI principles related to the specific context of the requirement below, transform it into a one line brief description of an ethical user story:
+    Instruction: Basing your answer on the AI principles related to the specific context of the requirement specified at ###REQUIREMENT, transform this ethical requirement into a one line brief description of an ethical user story:
 
     {context}
 
-    ### QUESTION:
+    ### REQUIREMENT:
     {requirement} 
 
     [/INST]
