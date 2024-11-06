@@ -9,7 +9,7 @@ from rag.rag import generate_store
 import transformers
 
 def load_model():
-    mistral = AutoModelForCausalLM.from_pretrained('./model-trained/', local_files_only=True)
+    mistral = AutoModelForCausalLM.from_pretrained('./fine-tunned-model/', local_files_only=True)
     return mistral
 
 def model_rag(path: str, req: str):
@@ -17,7 +17,7 @@ def model_rag(path: str, req: str):
     model = load_model()
     text_generation_pipeline = transformers.pipeline(
         model=model,
-        tokenizer=transformers.AutoTokenizer.from_pretrained("./model/checkpoint-162/", local_files_only=True),
+        tokenizer=transformers.AutoTokenizer.from_pretrained("./fine-tunned-model/", local_files_only=True),
         task="text-generation",
         temperature=0.2,
         repetition_penalty=1.1,
