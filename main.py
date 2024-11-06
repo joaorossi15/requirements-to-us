@@ -62,6 +62,6 @@ def model_rag(persist_path: str):
 
     db = Chroma(persist_directory=persist_path, embedding_function=HuggingFaceEmbeddings(model_name='sentence-transformers/all-mpnet-base-v2'))
 
-    rag_chain = ({"context": db.as_retriever(search_type="similarity_score_threshold", search_kwargs={'score_threshold': 0.5}), "requirement": RunnablePassthrough()} | llm_chain)
+    rag_chain = ({"context": db.as_retriever(), "requirement": RunnablePassthrough()} | llm_chain)
             
     return rag_chain
