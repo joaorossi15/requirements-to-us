@@ -47,9 +47,11 @@ def model_rag(req: str, persist_path: str):
     llm_chain = LLMChain(llm=mistral_llm, prompt=prompt)
 
     db = Chroma(persist_directory=persist_path, embedding_function=HuggingFaceEmbeddings(model_name='sentence-transformers/all-mpnet-base-v2'))
-    query = f'[INST] Transform the requirement below into a one line brief description of an ethical user story \\n{req} [/INST]'
-    results = db.similarity_search_with_relevance_scores(query, k=3)
 
-    rag_chain = ({"context": results, "requirement": RunnablePassthrough()} | llm_chain)
+    rag_chain = ({
+                "context": db.as_retriever(search_type="similarity_score_threshold", search_kwargs={'score_threshold': 0.8}), 
+                "requirement": RunnablePassthrough()
+            } | llm_chain)
+            
     rag_chain.invoke(req)
 
