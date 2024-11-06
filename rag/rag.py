@@ -1,10 +1,8 @@
 from langchain.document_loaders.pdf import PyPDFDirectoryLoader # Importing PDF loader from Langchain
 from langchain.text_splitter import RecursiveCharacterTextSplitter # Importing text splitter from Langchain
-from langchain.embeddings import OpenAIEmbeddings # Importing OpenAI embeddings from Langchain
 from langchain.schema import Document # Importing Document schema from Langchain
 from langchain.vectorstores.chroma import Chroma # Importing Chroma vector store from Langchain
 from langchain.embeddings.huggingface import HuggingFaceEmbeddings
-from dotenv import load_dotenv # Importing dotenv to get API key from .env file
 import os # Importing os module for operating system functionalities
 import shutil # Importing shutil module for high-level file operations
 
@@ -15,6 +13,7 @@ def load_documents(dir: str):
 
 
 def split_text(docs: list[Document]):
+
     text_splitter = RecursiveCharacterTextSplitter(
         chunk_size=300,
         chunk_overlap=100,
@@ -29,7 +28,7 @@ def split_text(docs: list[Document]):
 
 
 def chroma(chunks: list[Document]):
-    path = ''
+    path = './chroma/'
 
     if os.path.exists(path):
         shutil.rmtree(path)
@@ -47,4 +46,6 @@ def generate_store(path: str):
     documents = load_documents(path)
     chunks = split_text(documents)
     chroma(chunks)
+
+generate_store('/home/joaorossi/us-translator/rag-data')
 

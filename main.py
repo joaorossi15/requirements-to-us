@@ -9,7 +9,7 @@ from rag.rag import generate_store
 import transformers
 
 def load_model():
-    mistral = TFAutoModel.from_pretrained('us-translator/model-trained/', local_files_only=True)
+    mistral = TFAutoModel.from_pretrained('./model-trained/', local_files_only=True)
     return mistral
 
 def model_rag(path: str, req: str):
@@ -17,7 +17,7 @@ def model_rag(path: str, req: str):
     model = load_model()
     text_generation_pipeline = transformers.pipeline(
         model=model,
-        tokenizer=transformers.AutoTokenizer.from_pretrained("us-translator/mode/checkpoint-162/", local_files_only=True),
+        tokenizer=transformers.AutoTokenizer.from_pretrained("./mode/checkpoint-162/", local_files_only=True),
         task="text-generation",
         temperature=0.2,
         repetition_penalty=1.1,
@@ -47,9 +47,9 @@ def model_rag(path: str, req: str):
     llm_chain = LLMChain(llm=mistral_llm, prompt=prompt)
 
     db = Chroma(persist_directory=path, embedding_function=HuggingFaceEmbeddings(model_name='sentence-transformers/all-mpnet-base-v2'))
-    query = '[INST] Transform the requirement below into a one line brief description of an ethical user story \\n{comment} \\n[/INST]'
+    query = f'[INST] Transform the requirement below into a one line brief description of an ethical user story \\n{req} [/INST]'
     results = db.similarity_search_with_relevance_scores(query, k=3)
 
     rag_chain = ({"context": results, "requirement": RunnablePassthrough()} | llm_chain)
     rag_chain.invoke(req)
-    
+
