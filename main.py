@@ -1,3 +1,4 @@
+from enum import auto
 from langchain.llms import HuggingFacePipeline
 from langchain.prompts import PromptTemplate
 from langchain.embeddings.huggingface import HuggingFaceEmbeddings
@@ -23,6 +24,7 @@ def model_rag(req: str, persist_path: str):
         repetition_penalty=1.1,
         return_full_text=True,
         max_new_tokens=300,
+        device=auto
     )
 
     prompt_template = """
