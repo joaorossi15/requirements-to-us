@@ -10,15 +10,15 @@ from peft import PeftModel, PeftConfig
 import transformers
 
 def load_model():
-    mistral = AutoModelForCausalLM.from_pretrained("TheBloke/Mistral-7B-Instruct-v0.2-GPTQ")
-    model = PeftModel.from_pretrained(mistral, "joaorossi15/mistral-7B-ai-ethics")
+    mistral = AutoModelForCausalLM.from_pretrained("mistralai/Mistral-7B-Instruct-v0.3")
+    model = PeftModel.from_pretrained(mistral, "mistral-7B-v03-ai-ethics-translator")
     return model
 
 def model_rag(persist_path: str):
     model = load_model()
     text_generation_pipeline = transformers.pipeline(
         model=model,
-        tokenizer=transformers.AutoTokenizer.from_pretrained("TheBloke/Mistral-7B-Instruct-v0.2-GPTQ"),
+        tokenizer=transformers.AutoTokenizer.from_pretrained("mistralai/Mistral-7B-Instruct-v0.3"),
         task="text-generation",
         temperature=0.2,
         repetition_penalty=1.1,
@@ -41,9 +41,11 @@ def model_rag(persist_path: str):
     
     prompt_template = """
     ### [INST] 
-    Instruction: Basing your answer on the AI principles related to the specific context of the requirement specified at ###REQUIREMENT, transform this ethical requirement into a one line brief description of an ethical user story:
+    Instruction: Basing your answer on the AI principles related to the specific context defined below of the requirement specifie, transform this ethical requirement into a one line brief description of an ethical user story:
 
     {context}
+
+    Now given the context, transform the requirement below into a one line brief description of an ethical user story.
 
     ### REQUIREMENT:
     {requirement} 
