@@ -21,8 +21,8 @@ def split_text(docs: list[Document]):
             "\n",
             ".",
         ],
-        chunk_size=200,
-        chunk_overlap=70,
+        chunk_size=500,
+        chunk_overlap=150,
         length_function=len,
     )
 
