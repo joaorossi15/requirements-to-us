@@ -1,4 +1,4 @@
-# Requirements to US
+# Ethical Requirements to Ethical US
 
 LLM-based tool powered by Mistral v0.3 that transforms high-level ethical requirements into actionable ethical user stories. Utilizing HuggingFace, retrieval-augmented generation (RAG), ChromaDB and LangChain, this tool bridges the gap between abstract ethical principles and practical implementation, ensuring ethical considerations are seamlessly integrated into software development processes.
 
