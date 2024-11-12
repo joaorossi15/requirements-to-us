@@ -30,7 +30,7 @@ def model_rag(persist_path: str):
     prompt_template = """
     ### [INST] 
     Instruction: Basing your answer on the AI principles related to the specific context defined below of the requirement specifie, transform this ethical requirement into an ethical user story following the TEMPLATE:
-    Title: <title>, Description: As a <persona> i want to <do something> <so that>, Work: <acceptance criteria>: {comment}
+    Title: <title>, Description: As a <persona> i want to <do something> <so that>, Work: <acceptance criteria>
 
     {context}
 
