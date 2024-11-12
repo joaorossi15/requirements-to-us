@@ -11,7 +11,7 @@ import transformers
 
 def load_model():
     mistral = AutoModelForCausalLM.from_pretrained("mistralai/Mistral-7B-Instruct-v0.3")
-    model = PeftModel.from_pretrained(mistral, "joaorossi15/mistral-7B-v03-ai-ethics-translator")
+    model = PeftModel.from_pretrained(mistral, "joaorossi15/mistral-7B-v03-ethical-user-stories")
     return model
 
 def model_rag(persist_path: str):
