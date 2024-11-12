@@ -26,22 +26,11 @@ def model_rag(persist_path: str):
         max_new_tokens=300,
         device=0
     )
-
-   # prompt_template = """
-    ### [INST] 
-    #Instruction: Basing your answer on the ethical principles of: transparency, non-maleficence, responsibility, privacy, beneficence, freedom and autonomy, sustainability, dignity and justice, transform the requirement below into a one line brief description of an ethical user story:
-
-    #{context}
-
-    ### QUESTION:
-    #{requirement} 
-
-    #[/INST]
-    #"""
     
     prompt_template = """
     ### [INST] 
-    Instruction: Basing your answer on the AI principles related to the specific context defined below of the requirement specifie, transform this ethical requirement into a one line brief description of an ethical user story:
+    Instruction: Basing your answer on the AI principles related to the specific context defined below of the requirement specifie, transform this ethical requirement into an ethical user story following the TEMPLATE:
+    Title: <title>, Description: As a <persona> i want to <do something> <so that>, Work: <acceptance criteria>: {comment}
 
     {context}
 
