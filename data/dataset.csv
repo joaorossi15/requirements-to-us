@@ -1,0 +1,818 @@
+,text,major_principle,is_major_principle_here,ethical_us,correct
+0,"An intelligent system connected to the video surveillance in the terminal can be given parameters to search for the current or latest location of a vehicle or person in the terminal by being given the register plate, a photo of a person, or other such identifying data.",privacy,True,"Title: Privacy-Respecting Intelligent Surveillance Search
+
+Description: As a data privacy officer, I want to ensure that searches for vehicles or persons using surveillance systems are conducted with user consent and data minimization so that individual privacy is protected.
+
+Work: Implement a permission framework that requires explicit consent before using identifying data such as register plates or photos. Ensure data is anonymized and access is logged and restricted to authorized personnel only.",True
+1,Terminal area and booking documents and booking app contains the help information (for different purposes broken down).,transparency,True,"Title: Transparent Help Information for Terminal Area and Booking Systems
+
+Description: As a user seeking assistance, I want to access clear and detailed help information in the terminal area, booking documents, and booking app so that I can understand how to use these systems effectively and independently.
+
+Work: Break down and categorize the help information for different purposes, ensuring it is accessible within the terminal area, booking documents, and booking app. The help content should be easy to navigate, comprehensive, and provided in a language that is understandable to all users.",True
+2,"Before a person with a vehicle enters the port, they are given explanation of what information will be handled, for example at the stage of making a reservation when they agree to give the necessary information of their vehicle.",transparency,True,"Title: Vehicle Information Transparency Prior to Port Entry
+
+Description: As a vehicle owner, I want to be clearly informed about what information will be handled before entering the port so that I can understand and consent to data usage during the reservation process.
+
+Work: Develop a clear and detailed explanation process, presented at the reservation stage, covering how vehicle information will be used, stored, and managed, ensuring the information is easily understandable before the data is collected.",True
+3,A clear advertisement is placed on the booking document about the AI and data privacy.,transparency,True,"Title: Transparent Communication of AI and Data Privacy on Booking Documents
+
+Description: As a customer, I want to see a clear advertisement on the booking document about AI and data privacy so that I am informed and can make informed decisions about my data.
+
+Work: Ensure all booking documents include a prominent section that clearly communicates information regarding the usage of AI and data privacy practices, including any data collection and processing details, to maintain transparency and build trust with customers.",True
+4,Data information policy is communicated at the service app/web page. Procedures in place for GDPR compliance and required steps are planned for example huge amount of user data request. For example redirection of resources or waiting times are clearly communicated.,transparency,True,"Title: Transparent Data Handling and GDPR Compliance Communication
+
+Description: As a user, I want to clearly understand data information policies and procedures regarding GDPR compliance, so that I can be assured of my rights and the processing of my personal data.
+
+Work: Ensure that data information policies and GDPR compliance procedures are prominently communicated on the service app/web page. Develop clear guidelines for handling a large number of user data requests, such as resource redirection or estimated waiting times, and make this information easily accessible to users.",True
+5,No feature of the smart terminal or port must interfere in an unwanted way with any system in the passenger vehicles.,non-maleficence,True,"Title: Ensuring Non-Interference of Smart Terminals with Vehicle Systems  
+
+Description: As a passenger vehicle user, I want assurance that no feature of the smart terminal or port interferes in an unwanted way with any system in the passenger vehicles so that my journeys remain safe and free from technical disruptions.  
+
+Work: Conduct thorough testing of all smart terminal features to confirm they do not inadvertently interact with or affect vehicle systems. Implement safeguards to prevent unintended interactions and continuously monitor for potential interference issues.",True
+6,"Car indentation system (digital, semi-automated, etc.) with control, navigation and markings is placed in the car deck to direct cars in line and to right places.",beneficence,True,"Title: Car Indentation System for Safe and Efficient Parking
+
+Description: As a vehicle operator, I want to utilize a car indentation system with control, navigation, and markings, so that cars can be directed safely and efficiently into their designated places on the car deck, enhancing both safety and operational efficiency.
+
+Work: Develop and integrate a semi-automated car indentation system on the car deck featuring intuitive control, precise navigation, and clear markings. Test the system to ensure it accurately directs vehicles, prevents collisions or misalignment, and improves the overall flow and organization of vehicle parking to benefit both operators and passengers.",True
+7,"The system has a reliable way to detect people sitting in a vehicle, that is in balance with respecting the privacy of passengers and adhering to border protocols",privacy,True,"Title: Privacy-Respecting Passenger Detection in Vehicles
+
+Description: As a border security officer, I want to reliably detect people sitting in a vehicle while respecting passenger privacy and adhering to border protocols so that we can ensure security without compromising personal privacy.
+
+Work: Implement a detection system that uses privacy-preserving technologies, such as anonymized data processing or sensor data that do not capture or store identifiable information, and validate its compliance with border security protocols and privacy regulations.",True
+8,"The system is transparent in its functioning and marks possible ""uncertain"" situations with timestamps or other identifying information",transparency,True,"Title: Clear and Trackable System Alerts
+
+Description: As a responsible user, I want the system to transparently indicate and mark ""uncertain"" situations with timestamps or other identifying information so that I can review and understand these moments accurately.
+
+Work: Implement a feature that flags situations as ""uncertain"" and records relevant data such as timestamps or identifiers. Ensure that this information is readily visible and accessible to users, and provide explanations or logs that clarify why a situation was marked as such.",True
+9,Car identification system is tested with right and wrong data and error handling is defined in the terminal action plan and terminal personnel is trained with error handling.,responsibility,True,"Title: Comprehensive Error Handling and Training in Car Identification System
+
+Description: As a terminal operator, I want the car identification system to be tested with both correct and incorrect data and ensure a well-defined error handling protocol, so that I can responsibly manage and mitigate errors during operations.
+
+Work: Test the car identification system using both correct and incorrect datasets to identify potential errors; define a clear and effective error handling protocol in the terminal action plan; and provide thorough training to terminal personnel on following these protocols.",True
+10,The data tied to a person can be found and is eraseable in the system upon request.,privacy,True,"Title: Personal Data Erasure Request Fulfillment
+
+Description: As a user, I want to be able to find and erase my personal data in the system upon request so that my privacy is maintained and respected.
+
+Work: Implement a user interface feature that allows users to submit data erasure requests and develop backend processes to ensure data is securely located and erased from the system upon verification of the request.",True
+11,Smart terminal area is defined in the blueprints of the SMARTER project with responsibilities and roles.,responsibility,True,"Title: Define Responsibilities and Roles in Smart Terminal Blueprints
+
+Description: As a project stakeholder, I want to ensure that the SMARTER project's smart terminal area has clearly defined responsibilities and roles so that accountability and integrity are maintained throughout the project's lifecycle.
+
+Work: Review and refine the blueprints of the SMARTER project to outline specific responsibilities and roles within the smart terminal area. Ensure clear documentation and communication of these roles to all relevant team members and stakeholders. Validate the alignment of roles with ethical standards of responsibility.",True
+12,The data storing and collecting follows the GDPR regulations and identifying data is anonymized or destroyed within the legal time frame.,privacy,True,"Title: GDPR-Compliant Data Management
+
+Description: As a data subject, I want my personal information to be anonymized or destroyed within the legal time frame so that my privacy is respected and protected.
+
+Work: Ensure that data storage and collection processes adhere to GDPR regulations by implementing systems to automatically anonymize or delete personal data within the required legal time frames. Regular audits and compliance checks should be conducted to maintain adherence to GDPR standards.",True
+13,"Before being able to finish purchasing tickets, the passenger is required to accept the terms and conditions of using the smart terminal and having the minimum required data collected.",transparency,True,"Title: Ensure Informed Consent for Ticket Purchase
+
+Description: As a passenger, I want to clearly understand the terms and conditions and the data collected before purchasing tickets so that I can make an informed decision about using the smart terminal.
+
+Work: 
+
+1. Develop a user-friendly interface that presents the terms and conditions and data collection policies in a clear and understandable manner.
+2. Implement an acknowledgment feature requiring passengers to confirm understanding and acceptance of the terms and conditions before purchase.
+3. Create an easy-to-navigate FAQ section to address common concerns about terms, conditions, and data privacy.
+4. Conduct usability testing to ensure passengers can comprehend the information easily.
+5. Provide options for users to receive the terms and conditions document via email for their records.",True
+14,Communication plan has a section about on-time communication for different logistical purposes towards car carriers,transparency,True,"Title: Transparent Communication for Logistics Coordination
+
+Description: As a logistics coordinator, I want to ensure on-time communication for various logistical purposes towards car carriers so that all involved parties have a clear understanding of schedules and expectations.
+
+Work: Develop and integrate a comprehensive communication plan that includes standardized procedures and platforms for timely updates, notifications, and information sharing with car carriers. Ensure that all communications are documented and accessible to stakeholders to promote transparency and accountability in logistical operations.",True
+15,Data consent lifecycle is defined in the SMART terminal blueprints.,privacy,True,"Title: Comprehensive Data Consent Management for SMART Terminals
+
+Description: As a terminal user, I want to ensure my data consent preferences are clearly defined and respected so that my personal data privacy is maintained throughout my interactions with SMART terminals.
+
+Work: Define and implement a detailed data consent lifecycle in the SMART terminal blueprints, ensuring all stages of data collection, processing, and storage are transparent and aligned with user consent.",True
+16,Harbor area will have clear signs of the data requirities and visualize the flow of events.,transparency,True,"Title: Enhance Transparency with Clear Data Requisition Signage and Event Flow Visualization
+
+Description: As a harbor operator, I want to have clear signs displaying data requisites and visualize the flow of events so that I can ensure transparency in data handling and operational processes.
+
+Work: Develop and install signage that clearly outlines data requirements in the harbor area. Implement a system to visualize the flow of events, ensuring the information is accessible and easily understood by all stakeholders involved.",True
+17,"The boarding process is as similar to what it used to be as possible, or even simpler. Any and all instructions are crystal clear so that the passengers are able to proceed without asking for assistance as often as possible.",transparency,True,"Title: Transparent Boarding Process
+
+Description: As a passenger, I want the boarding process and instructions to be clear and straightforward so that I can navigate it independently without needing frequent assistance.
+
+Work: Ensure that all boarding instructions are communicated in a clear, understandable manner for passengers. Develop user-friendly visual and audio aids to assist in understanding the boarding process. Test the clarity of instructions with a diverse group of passengers to ensure they are intuitive and easily followed without additional guidance.",True
+18,Action plan for personnels in terms of delays are embedded into the logistics plan and it will have a section on human behaviour with smart system delays and actions preventing misbehaviour on passsengers.,beneficence,True,"Title: Implementing a Beneficial Action Plan for Logistics and Passenger Behavior
+
+Description: As a logistics coordinator, I want to embed an action plan for personnel into the logistics plan so that we can effectively manage delays and prevent misbehavior among passengers, ultimately ensuring a smooth travel experience that benefits all stakeholders.
+
+Work: Develop a smart system that analyzes potential delays, creates contingency actions for personnel, and includes guidelines for addressing and preventing passenger misbehavior. Ensure the system enhances travel efficiency and passenger experience by implementing proactive measures and training for personnel on best practices in handling logistics challenges and customer interactions in beneficial ways.
+",True
+19,"The system can display capacity information for passengers that access the service remotely and at the port, display terminals can also provide these types of information for passengers.",transparency,True,"Title: Enhanced Passenger Transparency on Capacity Information
+
+Description: As a passenger, I want to access accurate and up-to-date capacity information both remotely and at the port, so that I can make informed decisions about my travel plans.
+
+Work: Develop and integrate a user-friendly interface that displays real-time capacity information online and on display terminals at the port. The system should ensure data accuracy and regular updates to maintain transparency with passengers.",True
+20,Clear logs that shows the state of the system and provide appropriate feedback and APIs that can improve system integration.,transparency,True,"Title: Transparent System State and Integration Enhancement
+
+Description: As a system integrator, I want to access clear logs that show the state of the system and provide appropriate feedback and APIs to improve system integration so that I can ensure seamless and reliable operations.
+
+Work: Develop and implement a transparent logging system that accurately reflects the system's state, integrates detailed feedback mechanisms, and provides comprehensive APIs to facilitate enhanced system integration and communication.",True
+21,Technical data of the camera is communicated to developers and also to wider audience in order to built trust on the system as a whole,trust,True,"Title: Enhancing Transparency and Trust through Technical Data Communication
+
+Description: As a responsible AI developer, I want to communicate the technical data of the camera to both developers and the wider audience so that trust in the system as a whole can be built.
+
+Work: Ensure that technical data of the camera is accurately documented, translated into understandable formats, and made accessible to developers and the public in a transparent manner, using various communication channels to reach diverse audiences.",True
+22,Different use cases in passenger flows are modeled and communicated to all needed participants torugh the development lifecycle.,transparency,True,"Title: Transparent Communication of Passenger Flow Models
+
+Description: As a project stakeholder, I want to ensure that different use cases in passenger flows are clearly modeled and communicated to all necessary participants throughout the development lifecycle so that everyone involved has a clear understanding and can make informed decisions.
+
+Work: Create detailed documentation and regular updates of passenger flow use cases, establish a communication plan to distribute information to all stakeholders, and implement feedback loops to ensure understanding and address questions or concerns promptly.",True
+23,"Passengers are instructed to clear their register plates before arriving to the terminal. An employee is still present to resolve problem situations (e.g. to quickly clean the register plate if needed). Accidents are handled as they currently are when two human drivers are involved. For accident situations with smart vehicles, accountability is also determined by the smart vehicle's accountability.",responsibility,True,"Title: Ensuring Accountability in Smart Vehicle Operations
+
+Description: As a transport authority, I want to ensure clear accountability in incidents involving smart vehicles so that responsibility is accurately assigned and safety protocols are upheld.
+
+Work: 
+- Implement a system for automatic logging and reporting of smart vehicle incidents.
+- Develop clear guidelines and protocols for determining accountability in mixed-traffic incidents.
+- Train employees on handling such situations, focusing on resolving disputes and maintaining safety.
+- Ensure systems in smart vehicles can communicate incident data effectively and securely with relevant authorities.",True
+24,"If the terminal interacts with smart vehicles, it must be in a way that does not compromise the safety of either party. There must be clear limits to what data is shared and what permissions the systems have for information exchange.",privacy,True,"Title: Secure Data Exchange Between Terminals and Smart Vehicles
+
+Description: As a vehicle owner, I want to ensure that my personal data remains private during terminal interactions so that my safety and personal information are protected.
+
+Work: Define and implement strict data sharing protocols, set clear permissions for data access and exchange, and conduct comprehensive privacy assessments to ensure compliance with privacy standards.",True
+25,Smart harborfollows a protocol on traditional cars and a smart vehicles when developing the flow of events from harbor entering to entering to the ship.,justice and equity,True,"Title: Equitable Protocol Implementation for Traditional and Smart Vehicles
+
+Description: As a harbor operator, I want to develop a fair and equitable protocol for both traditional cars and smart vehicles from harbor entry to ship boarding, so that all vehicle types receive unbiased and equal treatment.
+
+Work: Establish a standardized set of flow-of-events protocols ensuring all vehicle types comply with fair and equitable entry and boarding procedures, conduct bias assessments, and implement necessary adjustments to eliminate disparities between traditional and smart vehicles.",True
+26,Boarding pass on cars are shared with instructions for different vehicles.,transparency,True,"Title: Ensuring Clear Communication of Vehicle Boarding Pass Instructions
+
+Description: As a traveler, I want to receive clearly explained boarding pass instructions for different vehicles so that I can easily understand the boarding process.
+
+Work: Develop a system to present boarding pass instructions for various vehicles in a clear, understandable manner. This includes implementing features for consistent terminology, visual aids, and feedback mechanisms to ensure users comprehend the information provided.",True
+27,The system can provide a standby system in place should the traffic lights fail or a human traffic warden that will help direct traffic for ship loading and unloading.,responsibility,True,"Title: Backup Traffic Management System for Port Operations
+
+Description: As an operations manager, I want to ensure a backup system for traffic control is in place, so that the flow of loading and unloading ships continues smoothly without disruption in case of traffic light failures.
+
+Work: Implement a reliable standby traffic management system, like a human traffic warden or automated alternative, and establish protocols to activate this system immediately upon traffic light failure to maintain traffic flow integrity and operational responsibility.",True
+28,Digital scanners that synchronize passenger information with regulations such as alcohol limits that can be brought in and to ensure that drunk or underage passengers are not driving.,non-maleficence,True,"Title: Enforcing Safety with Passenger Information Regulation Compliance
+
+Description: As a transportation regulator, I want to synchronize digital scanners with regulations concerning alcohol limits and age restrictions, so that drunk or underage passengers are prevented from driving and public safety is ensured.
+
+Work: Implement digital scanner technology to align with local regulations, integrate systems that automatically detect and alert for potential hazards related to underage or intoxicated individuals, and conduct regular audits to ensure continuous compliance with safety standards.",True
+29,The system can provide a standby system in place should the traffic lights fail or a human traffic warden that will help direct traffic for ship loading and unloading.,non-maleficence,True,"Title: Backup Traffic Management for Ship Operations
+
+Description: As a maritime operations manager, I want to implement a standby traffic management system, including backup traffic lights or a human traffic warden, so that disruptions due to system failures are minimized and safety is maintained during ship loading and unloading.
+
+Work: Develop and deploy a reliable backup system with either automated standby traffic lights or arrange for a trained human traffic warden to direct traffic, ensuring continuous and safe operations in case of primary system failures.",True
+30,"Regular digital or even manual information system checks with prompts informing on current updates such as parking information, duration of parking, etc.",transparency,True,"Title: Transparent Parking Information Updates
+
+Description: As a parking user, I want to receive prompt and clear updates on current parking information, such as parking availability and duration, so that I can make informed decisions and manage my parking needs effectively.
+
+Work: Implement a system that regularly checks for new parking data and sends timely notifications to users about any updates or changes, ensuring that the information is clear, accurate, and easy to understand.",True
+31,Digital verification devices such as number plate scanners for vehicles to ensure that vehicle is authentic and in line with regulations and biometic scanner for human passengers.,trust,True,"Title: Ensuring Trustworthy and Secure Digital Verification for Vehicles and Passengers
+
+Description: As a regulatory compliance officer, I want to verify vehicle authenticity and passenger identity using digital verification devices such as number plate scanners and biometric scanners so that trust is built, ensuring safe and compliant use of transportation systems.
+
+Work: Implement secure number plate scanning and biometric verification systems that protect data privacy, ensure accuracy, and comply with relevant regulations. Develop protocols for securely storing and processing collected data, and establish regular audits to validate system integrity and effectiveness.",True
+32,APIs and Interoperable systems that can provide accurate data records from different teriminals and can synchronize efficiently with the ports System,transparency,True,"Title: Transparent and Interoperable Port System Data Synchronization
+
+Description: As a Port Operations Manager, I want to ensure that APIs and interoperable systems provide accurate and transparent data records from different terminals so that I can make informed decisions and synchronize efficiently with the port's system.
+
+Work: Develop and implement interoperable APIs that provide clear documentation and logs, ensuring data accuracy and visibility across all terminal transactions, and facilitate efficient synchronization with the port system for real-time, transparent operational insights.",True
+33,System provides clear and transparent information without any ambiguity at remote terminals and at digital terminals and with people who check in passengers at the port.,transparency,True,"Title: Ensure Transparent Communication at All Terminal Checkpoints  
+Description: As a passenger, I want to receive clear and transparent information at remote terminals, digital terminals, and from staff during check-in so that I can make informed decisions and travel with confidence.  
+Work: Design and implement a communication system that consistently provides unambiguous information across all points of check-in, including remote and digital terminals, and train staff to effectively communicate relevant details to passengers.",True
+34,AI integrated into the system that can help identify data patterns for users with special needs and provide necessary information.,justice and equity,True,"Title: Inclusive Data Pattern Recognition for Special Needs Users
+
+Description: As a system developer, I want to ensure that the AI integrated into our system identifies data patterns for users with special needs equitably so that these users receive the necessary information without discrimination or bias.
+
+Work: Ensure the AI system is rigorously tested for fairness, incorporate diverse datasets representing users with special needs, and include regular audits to identify and correct any biases in pattern recognition and information delivery.",True
+35,A clear and well defined HCI system where voice can be used to communicate data consent in line with relevant regulations.,privacy,True,"Title: Voice-Activated Data Consent for Privacy Compliance
+
+Description: As a user who values privacy, I want to use voice commands to communicate my data consent in line with relevant regulations so that I can have confidence that my personal information is handled securely and my rights are respected.
+
+Work: Develop a voice-activated feature that allows users to give or withdraw data consent, ensuring compliance with privacy regulations and secure processing and storage of voice input. Implement feedback mechanisms to assure users of the privacy and security of their data consent operations.",True
+36,A centralized data management system with clearly outlined details on access rights and clear logs on users.,transparency,True,"Title: Enhanced Data Access Transparency
+
+Description: As a data stakeholder, I want to have a centralized data management system with clearly outlined details on access rights and transparent user activity logs so that I can understand and monitor who accesses data and how it is used.
+
+Work: Implement a centralized data management platform that includes detailed documentation of user access rights and maintains comprehensive logs of user interactions with data, ensuring this information is easily accessible and understandable to stakeholders.",True
+37,Booking information does not exclude anyone from the needed identification information and the booking application has the identification information as a mandatory field.,justice and equity,True,"Title: Inclusive Booking Information for All Users
+
+Description: As an equitable access advocate, I want to ensure that booking information includes the necessary identification fields for everyone, so that no one is unfairly excluded from making bookings.
+
+Work: Ensure the booking application includes identification information as a mandatory field for all users, verifying that the system allows for the inclusion of various forms of acceptable identification to accommodate diverse user needs and backgrounds, without imposing barriers that could exclude anyone.",True
+38,"Ensure the quality of the data by testing. Testing at least with race, gender, age should be done and variance between gropes should not be significant. Realtime testing in real context needs to be done before launch.",justice and equity,True,"Title: Ensuring Fair and Equitable Data Quality through Testing
+
+Description: As a socially conscious developer, I want to ensure the AI system performs equitably across different demographics so that no group is subjected to discrimination or unfair outcomes.
+
+Work: Conduct comprehensive data testing across race, gender, and age to identify any significant variances between groups; implement real-time testing in actual contexts before launch to ensure fairness and equity in AI outcomes.",True
+39,"I while shopping in the termina I lost track of time and I need to locate my self in the terminal. Mobile app or feature in terminal enduser app for navigation. System has Opt-in policy. Treminal has tracking points, sensors or QR code to provide tracing of the users movements and provide indor navigation to desired points.",freedom and autonomy,True,"Title: Location Assistance with User Freedom and Autonomy  
+
+Description: As a traveler, I want to opt-in for indoor navigation within the terminal so that I can freely locate my desired destinations without losing track of time.  
+
+Work: Develop an opt-in feature for the mobile app or terminal end-user app that utilizes tracking points, sensors, or QR codes to provide indoor navigation, ensuring that user autonomy and freedom of choice are prioritized by allowing them to voluntarily engage with the navigation service.",True
+40,When auditing is in process system need to provide detailed documentation in every level of system architecture. Also 3rd party components needs to be documented or at least links to those systems documentation needs to Available.,transparency,True,"Title: Comprehensive System Documentation for Audit Transparency
+
+Description: As an auditor, I want to access detailed documentation at every level of the system architecture, including third-party components, so that I can ensure the system's transparency and compliance during an audit.
+
+Work: Ensure that the system provides thorough documentation for both in-house and third-party components, including detailed descriptions of each part of the system architecture. Additionally, ensure that links to external documentation for third-party systems are readily accessible.",True
+41,"System needs to provide process documentation and specs for new service joining the system. List of acceptable actions should be given. E.g. are there restrictions of data usage, bandwidth, number of API queries",transparency,True,"Title: Comprehensive Service Integration Documentation
+
+Description: As a new service provider, I want to access complete and clear documentation, including acceptable actions and restrictions, so that I can integrate my service into the system transparently and efficiently.
+
+Work: Create detailed and understandable process documentation and specifications for any new service joining the system. This documentation should include a comprehensive list of acceptable actions, such as restrictions on data usage, bandwidth limitations, and the number of allowable API queries. Ensure that this information is clearly communicated and easily accessible to all potential service providers.",True
+42,System needs to provide user friendly and short description of the traceability features of the service and also provide instructions to take acting to access traceability. System needs also be able to end user notifications on traceability if user wishes,transparency,True,"Title: Enhanced Traceability Communication for Improved Transparency
+
+Description: As a conscientious end-user, I want to easily access clear descriptions and instructions on the traceability features of the service so that I can understand how my data is being managed and tracked.
+
+Work: Develop user-friendly and concise descriptions of the traceability features for the service. Implement a straightforward process to access detailed instructions on utilizing these features. Additionally, create an optional notification system for users who wish to receive updates on traceability, ensuring users can easily opt-in or opt-out at any time.",True
+43,Smart terminal system need to have API for BI tool so that the service provider can track the service usage.,transparency,True,"Title: Transparent API for Usage Tracking 
+
+Description: As a service provider, I want to have access to a clear and understandable API for BI tools, so that I can transparently track and analyze the service usage.
+
+Work: Develop and implement an API with well-documented endpoints and data flows, ensuring that the tracking and reporting of service usage are fully transparent and easily understandable by service providers. Provide comprehensive documentation and training resources to facilitate comprehension and effective use of the API.",True
+44,System should create explicit action log of its actions. The logs should be accessible for Designated personnel and understandable or reliably interpretable for government or other officials who require the logs for a legitimate reason.,transparency,True,"Title: Transparent Action Logging for Auditability
+
+Description: As a compliance officer, I want to have access to an explicit action log of the system's actions so that I can ensure accountability and compliance with regulatory requirements.
+
+Work: Implement a logging system that records all system actions in a detailed and explicit manner, ensuring that logs are accessible to designated personnel. The logs must be structured to be understandable or reliably interpretable for government or other officials who may require them for legitimate reasons.",True
+45,Systems identifies users with special need and  has feature to inform terminal service provider of required help. Systems also need to be available to tract special need aids inside the Terminal.,beneficence,True,"Title: Enhanced Support for Users with Special Needs at Terminals
+
+Description: As a special needs user, I want the system to identify my requirements and inform the terminal service provider, so that I receive the necessary assistance and my aid equipment is tracked within the terminal.
+
+Work: Develop and implement a system that accurately identifies users with special needs, notifies terminal service providers about the required assistance, and ensures real-time tracking of any special aid equipment within the terminal to enhance user support and accessibility.",True
+46,AI system needs to have a function to generate an explanation for its actions if requested by a system administrator with rights to access the System.,transparency,True,"Title: Explanation Generation Functionality for System Administrators
+
+Description: As a system administrator, I want to request and receive an explanation for the AI system's actions so that I can ensure transparency and understand the decision-making process.
+
+Work: Develop a function within the AI system that allows system administrators with appropriate access rights to request detailed explanations of the system's actions. Implement logging and user access controls to ensure that only authorized personnel can access this feature.",True
+47,Function level documentation needs to be in Place.,transparency,True,"Title: Comprehensive Function Documentation for Transparency  
+
+Description: As a developer, I want to have access to function-level documentation so that I can understand and communicate the function workings clearly to stakeholders.  
+
+Work: Ensure detailed documentation for each function is created, including explanations on the data inputs, processes, and outputs, and maintain these documents for ongoing accuracy and accessibility.",True
+48,"System needs to be tested with given number of versatile use cases and not only obvious use cases with acceptable results. Also, those cases that would be possible but not testes should be clary stated.",trust,True,"Title: Thorough and Transparent System Testing for Building Trust
+
+Description: As a software user, I want the system to be thoroughly tested with various use cases, not just the obvious ones, so that I can trust the system's reliability and transparency.
+
+Work: Develop and execute a comprehensive testing plan that includes a wide range of versatile use cases, not limited to typical scenarios. Clearly document and communicate any potential scenarios that were possible but not tested, ensuring openness and trust in the system's development and testing processes.",True
+49,"When planning my budget for freighting my  goods, i would like clear information on the different pricing options (aggregated prices) maybe in an app, sites or displayboards at the terminal to help me plan my budget effectively.",transparency,True,"Title: Transparent Freight Pricing Information
+
+Description: As a freight customer, I want to access clear information on different pricing options, such as aggregated prices, via an app, websites, or display boards at the terminal so that I can plan my budget effectively.
+
+Work: Design and implement a system that provides transparent and easily understandable pricing information, ensuring it is accessible through multiple platforms like apps, websites, and physical displays at terminals.",True
+50,clear and well defined pricing criteria such as pricing analysis for customers on the system.,transparency,True,"Title: Transparent Pricing Criteria for Customers
+
+Description: As a customer, I want to clearly understand the pricing criteria and analysis on the system so that I can make informed purchasing decisions.
+
+Work: Develop a user-friendly interface that displays detailed pricing breakdowns, implement clear explanations of pricing factors, and provide a pricing FAQ section to ensure customers fully understand how prices are determined.",True
+51,"When making inquiries as a customer, are there  pointers to say you are communicating with a virtual assistant and is there provision for a human assistant where possible?",transparency,True,"Title: Transparent Communication with Virtual Assistants
+
+Description: As a customer, I want to be clearly informed when I am communicating with a virtual assistant, and have the option to switch to a human assistant where possible so that I can make informed decisions about my interactions.
+
+Work: Implement indicators in the user interface to transparently notify customers when they are engaging with a virtual assistant. Provide a seamless transition option to a human assistant whenever available, ensuring clear communication pathways and user awareness throughout the interaction.",True
+52,When asked system documentation need to have description on what kind of data and from where was used to teach the system. Data set with out clear description should not be used.,transparency,True,"Title: Transparent Data Usage Documentation
+
+Description: As a system auditor, I want to have clear and detailed descriptions of the data and its sources used to train the AI system so that I can ensure adherence to transparency and accountability standards.
+
+Work: Ensure all AI system documentation includes comprehensive descriptions of the datasets, including the type of data and its sources, and establish a protocol for rejecting data sets lacking clear descriptions.",True
+53,In service critical or human relating features only explainable AI/ML solutions are used. When requested the system can provide reasoning behind given result.,transparency,True,"Title: Explainable AI for Critical and Human-Relating Features
+
+Description: As a responsible AI developer, I want to implement only explainable AI/ML solutions for service-critical or human-related features so that stakeholders can understand and trust the system's outputs by accessing reasoning behind results when requested.
+
+Work: Develop and integrate explainable AI/ML models for critical or human-related features, implement a system to provide clear and accessible reasoning for the decisions and outputs when requested by users or stakeholders, and ensure robust documentation and communication pathways for stakeholders to understand the explainability features.",True
+54,"When prompted by passengers, the system should be able to provide information requested, eg customer asking for summary on a trip should be able to get one from the system.",transparency,True,"Title: Passenger Information Transparency
+
+Description: As a passenger, I want to request and receive a summary of my trip so that I can understand and verify the details of my journey.
+
+Work: Implement a user-friendly interface that allows passengers to request trip summaries and ensure the system provides clear, detailed, and accurate information in response to their inquiries.",True
+55,"Before implementation, there should be a way to verify that the system is following the best practices and aligned with required legal Standards.",responsibility,True,"Title: System Compliance Verification
+
+Description: As a Compliance Officer, I want to verify that the system follows best practices and aligns with required legal standards so that we ensure accountability and integrity in our operations.
+
+Work: Implement a verification process that assesses system compliance with best practices and legal standards before deployment, including comprehensive checklists and audits.",True
+56,A detailed document explaining the extent of the system's data use should be prepared and available to customers upon request.,transparency,True,"Title: Data Usage Transparency Document  
+Description: As a customer, I want to request and receive a detailed document explaining the extent of the system's data use so that I understand how my data is being utilized.  
+Work: Develop and maintain a comprehensive document outlining the system's data usage practices, ensure it is easily accessible and readable for customers upon request, and establish a procedure for its distribution.",True
+57,The user is offered an easy to read statement of data privacy policies excercised with the terminal services for the services she is using (off the app) . She can opt in and out of data collection not necessary for my need of services.,transparency,True,"Title: Transparent Data Privacy Policies and Consent Management
+
+Description: As a terminal service user, I want to have access to a clear and easy-to-read statement of data privacy policies and be able to opt in and out of data collection that is not necessary for my use of services, so that I can make informed decisions about my personal data usage and maintain my privacy preferences.
+
+Work: Develop an interface element within the terminal services that displays the data privacy policies in a user-friendly manner. Implement functionality that allows users to easily opt in and out of non-essential data collection, ensuring these choices are respected and reflected in the system's data handling practices.",True
+58,System provides Data collection description and  Data restrictions. Relevant contact information. Way to notify errors,transparency,True,"Title: Transparent Data Handling and Communication
+
+Description: As a user, I want to understand how data is collected, what the restrictions are, and who to contact for concerns, so that I can trust and effectively interact with the system.
+
+Work: Implement clear and detailed documentation outlining the data collection process, data usage restrictions, relevant contact information for inquiries, and a straightforward way to report and notify errors.",True
+59,"Clear security communication to passengers who intend to use the terminal services, about what data is collected and how it is used.",transparency,True,"Title: Clear Communication of Data Use to Passengers
+
+Description: As a terminal service passenger, I want to be informed clearly about what data is collected and how it is used so that I can make informed decisions about my privacy and trust the terminal services.
+
+Work: Develop a user-friendly communication strategy that details data collection practices and usage. Implement clear signage, digital notifications, and support staff to explain the data policy to passengers. Ensure all communication is accessible and easily understandable by diverse passenger groups.",True
+60,Video recordings and such unanonymized identifying data are only available to few certified people,privacy,True,"Title: Controlled Access to Unanonymized Data for Privacy Protection
+
+Description: As a data privacy officer, I want to ensure that video recordings and unanonymized identifying data are only accessible to a select group of certified individuals so that the privacy of individuals is protected and unauthorized access is prevented.
+
+Work: Implement strict access controls and authentication processes to limit access to sensitive data, provide training and certification for personnel, and continuously monitor access logs to ensure compliance with privacy regulations.",True
+61,"A register of personal data processing activities and their justification (basis for processing) is created, all involved parties are identified and this register is maintained and made available for needing parties.",responsibility,True,"Title: Comprehensive Data Processing Accountability
+
+Description: As a data manager, I want to create and maintain a register of personal data processing activities and their justifications, identifying all involved parties, so that responsibility and accountability are upheld in data management processes.
+
+Work: 
+- Develop a standardized template for documenting personal data processing activities and their justification.
+- Ensure the identification and documentation of all involved parties in each data processing activity.
+- Implement a system for regularly updating and maintaining the register.
+- Create a secure access mechanism to make the register available to authorized parties who need it.
+- Conduct regular audits to ensure the accuracy and completeness of the register.
+- Provide training to data management staff on the importance of responsibility in handling personal data.",True
+62,"The data privacy notice is made available to the passenger (via the app she is using), which provides the purposes the personal data is used For.",transparency,True,"Title: Transparency in Data Usage Notification
+
+Description: As a passenger, I want to access the data privacy notice via the app I am using so that I can understand the purposes for which my personal data is used.
+
+Work: Ensure the app provides a clear and easily accessible data privacy notice that outlines the specific purposes for which personal data is collected and used, ensuring transparency for the passengers.",True
+63,Use case coordinator has detailed plan of the  systems and components contributing to the smart terminal system and also disclosure from those parties if they need GDPR clearances.,responsibility,True,"Title: System Component Responsibility Tracking and GDPR Compliance Disclosure
+
+Description: As a Use Case Coordinator, I want to have a detailed plan of the systems and components contributing to the smart terminal system, along with disclosure from those parties if they require GDPR clearances, so that I can ensure accountability and compliance with data protection regulations.
+
+Work: Develop a comprehensive list of all systems and components involved in the smart terminal system, and implement a procedure for each contributing party to disclose their need for GDPR clearances. Ensure that all disclosures are documented and regularly updated for accountability and compliance verification.",True
+64,"The value add application the passenger is using needs to impelent a control which identifies, which data processing activities are necessary for which basic or added value services the user is considering to use and she can thus opt in or out of the service based on the data processed. The data the user has selected for her rights execution needs to be processed accordingly, e.g. anonymized, deleted or made available for the user to transfer to another service/download.",freedom and autonomy,True,"Title: Empower Passenger Data Control with Opt-in/Opt-out Services
+
+Description: As a passenger, I want to have the ability to choose which data processing activities are necessary for the services I consider using, so that I can exercise my autonomy and control over my personal data.
+
+Work: Implement a control in the value-add application that clearly identifies the data processing activities associated with each basic or added value service. Enable users to opt in or out of these services based on their data processing preferences. Ensure the system processes the user's data rights selections accurately by anonymizing, deleting, or making data available for transfer/download, in accordance with user decisions.",True
+65,Data statements need to be available and also  descriptions what services optional and how to opt—out on those need to be implanted. Description of what parts of the system are used by harbor official and cannot by opt-outed.,transparency,True,"Title: Ensure Clarity and Accessibility of Data Usage and Opt-Out Options
+
+Description: As a system user, I want to access clear descriptions of data usage and learn how to opt out of optional services so that I can make informed decisions about my data and privacy.
+
+Work: 
+- Develop and implement accessible documentation that clearly explains data statements and their availability. 
+- Provide detailed descriptions of optional services and step-by-step guidance on how users can opt out.
+- Outline which system components are mandatory and used by harbor officials, ensuring transparency on why they cannot be opted out of. 
+- Ensure all information is communicated in an easily understandable format and is readily accessible to all users.",True
+66,System architecture needs to be draw and it needs to be shareable with relevant stakeholders. Possible security issues relating to architecture information sharing needs to be Mitigated.,transparency,True,"Title: Transparent Sharing of System Architecture  
+Description: As a system architect, I want to have a clear and shareable system architecture for relevant stakeholders so that the architecture details can be effectively communicated and verified while ensuring security concerns are addressed.  
+Work: Develop a secure and transparent system architecture representation that can be easily shared with stakeholders. Implement security measures to mitigate any potential risks associated with sharing architecture information. Include detailed documentation and explanation of the architecture to ensure clarity and understanding by all parties involved.",True
+67,The system can notify users on their tickets and display boards that data being collected are used in line with GDPR. Also regular tesing and security checks to ensure that customer data are not being jeopardized.,transparency,True,"Title: Ensuring Data Transparency and Compliance Notifications 
+
+Description: As a system user, I want to be notified about how my data is collected and used in line with GDPR so that I can feel confident about my privacy and the system’s integrity.
+
+Work: Implement a notification system for users on both their tickets and display boards that clearly communicates data usage in compliance with GDPR, and establish regular testing and security protocols to ensure the protection and compliance of customer data.",True
+68,Other forms of biometrics such as iris or finger print recognition as an alternative to facial Recogniton.,privacy,True,"Title: Privacy-Respecting Biometric Alternatives Implementation
+
+Description: As a privacy-conscious user, I want to use biometrics like iris or fingerprint recognition instead of facial recognition so that my personal data privacy is protected.
+
+Work: Research and implement privacy-compliant iris and fingerprint recognition technologies, update privacy policies to reflect these changes, and ensure secure data storage and handling procedures for alternative biometric data.",True
+69,"A regular testing protocol should be in place, to ensure the security of the system and protect against threats. The system should be kept updated and its resilience tested in regular Intervals.",trust,True,"Title: Ensuring System Security and Resilience Through Regular Testing
+
+Description: As a system administrator, I want to implement a regular testing protocol and maintain system updates so that the system's security is ensured, threats are mitigated, and trust is built with users. 
+
+Work: Develop and schedule a regular testing protocol, conduct periodic security assessments, ensure the system is updated, and verify its resilience against threats.",True
+70,Protocols for verifying that the system collects data accurately should be in place. The data accuracy and quality should be evaluated on a regular basis.,trust,True,"Title: Ensuring Trust through Accurate Data Collection
+
+Description: As a data integrity officer, I want to implement protocols for verifying system data collection accuracy so that stakeholders can trust the data quality and decision-making processes.
+
+Work: Develop and implement protocols for ongoing verification of data collection accuracy, ensure regular evaluation of data accuracy and quality, and create a scheduled plan for periodic data reviews to maintain trust in the system's data integrity.",True
+71,Ensure that channels used for data collection document processes to aid accuracy.,transparency,True,"Title: Document Data Collection Processes for Enhanced Transparency
+
+Description: As a data analyst, I want to ensure that channels used for data collection document their processes so that I can verify the accuracy and trustworthiness of the data collected.
+
+Work: Develop a standard protocol for documenting data collection processes, including detailed steps and responsible parties. Implement a system for regular audits and reviews of these documents to ensure compliance and transparency.",True
+72,Secure APIs to help enable the process and open data sources.,trust,True,"Title: Secure APIs for Trustworthy Data Access
+
+Description: As a data analyst, I want to access open data sources through secure APIs so that I can trust the integrity and protection of the data provided.
+
+Work: Implement robust security protocols for APIs, ensuring encryption and authentication mechanisms are in place, perform regular security audits, and provide transparent documentation on data handling processes and access controls to maintain trust in data access and system integrity.",True
+73,Documentation and logs of data sources for Traceability.,transparency,True,"Title: Ensure Data Source Documentation and Logging for Transparency
+
+Description: As a data analyst, I want to have access to comprehensive documentation and logs of all data sources so that I can trace the data's origin and gain a clear understanding of its lineage.
+
+Work: Establish a system for thorough documentation and logging of all data sources, ensuring that data origin, updates, and changes are recorded accurately and are easily accessible for analysis.",True
+74,relevant Data sources (APIs) are open for data analyst from the system and not just generic Data.,transparency,True,"Title: Enhanced Data Access for Transparency
+
+Description: As a data analyst, I want access to specific and relevant APIs from the system so that I can perform a transparent and comprehensive analysis.
+
+Work: Ensure that the APIs providing specific and relevant data, beyond generic datasets, are open and accessible to data analysts, accompanied by clear documentation and communication about the data's source and structure.",True
+75,The system follows regulations on data privacy and ensures that data access is granted only to relevant personnel.,privacy,True,"Title: Ensuring Data Privacy through Restricted Access
+
+Description: As a data privacy officer, I want to ensure that data access is granted only to relevant personnel so that the system adheres to privacy regulations and protects individual data.
+
+Work: Implement access control mechanisms that verify personnel roles before granting access, regularly audit data access logs for compliance, and update privacy policies to reflect any changes in data handling procedures.",True
+76,"Passengers can be notified by the system at collection points such as on remote terminals, or if they use apps at point of feeding their data why their data is being collected.",transparency,True,"Title: Transparency in Data Collection Notifications for Passengers  
+Description: As a passenger, I want to understand why my data is being collected at collection points or when using apps, so that I am informed and assured about the purposes of data usage.  
+Work: Implement clear and concise notifications that explain the reasons for data collection at remote terminals and app usage points, ensuring these notifications are easily accessible and understandable to all passengers.",True
+77,Regular data checks embedded in system to notify appropriate personnel on lifecycle of data to ensure conformity to regulations.,trust,True,"Title: Vigilant Data Monitoring for Regulatory Compliance
+
+Description: As a compliance officer, I want to ensure regular data checks are embedded in the system to notify appropriate personnel about the lifecycle of data so that we maintain conformity to regulations and build trust with our stakeholders.
+
+Work: Develop a system feature to automate regular data checks, notify personnel about data lifecycle events, and generate reports for compliance verification, ensuring the system meets all applicable regulatory standards and fosters trust through transparency and accountability.",True
+78,"System is continuously monitored for vulnerabilities. Penetration tests have been conducted, and new ones are conducted as Needed.",trust,True,"Title: Continuous Monitoring and Testing for System Trustworthiness
+
+Description: As a security officer, I want to ensure that the system is continuously monitored for vulnerabilities and that penetration tests are conducted regularly so that the system remains secure and reliable for users.
+
+Work: Implement continuous monitoring tools, schedule regular penetration tests, and establish a protocol for addressing identified vulnerabilities promptly to maintain user trust.",True
+79,The extent of necessary human oversight has been determined. The employees in charge of overseeing the process have been appointed.,responsibility,True,"Title: Ensuring Responsible Oversight in AI Processes
+
+Description: As a process overseer, I want to have clearly defined responsibilities and adequate oversight controls in place so that I can ensure the integrity and accountability of the AI system's operation.
+
+Work: Define the scope and criteria for human oversight in AI processes, appoint qualified employees to oversee these processes, and provide them with the necessary training and resources to uphold accountability and integrity.",True
+80,Systems have been integrated successfully.,trust,True,"Title: Ensuring Trustworthy System Integration
+
+Description: As a system operator, I want to ensure systems have been integrated successfully so that I can maintain the trust of users in the technology's reliable and seamless operation.
+
+Work: Conduct thorough integration testing, verify data consistency, ensure interoperability across systems, and document the integration process clearly for future reference and troubleshooting.",True
+81,"To protect against data pollution, e.g., disable the system from learning in use (offline). This is an on-going issue where solutions are evolving right now, and various measures should be Considered.",responsibility,True,"Title: Preventing Data Pollution Through System Learning Management
+
+Description: As a data engineer, I want to disable the system from learning while in use (offline) so that I can protect the AI system from data pollution and ensure responsible development practices.
+
+Work: Implement features to disable the system's learning functionality during offline periods and continuously evaluate and update various measures to address data pollution effectively.",True
+82,Detailed security plan from architecture level to single system feature level is drawn and mitigation plan is in action,responsibility,True,"Title: Comprehensive Security Mitigation Strategy
+
+Description: As a security officer, I want to ensure a detailed security plan is devised and a mitigation strategy is implemented at both architecture and system feature levels so that we uphold our responsibility for protecting user data and preventing breaches.
+
+Work: Develop a detailed security plan that encompasses both architecture and individual system features, along with a corresponding mitigation strategy. Ensure all aspects are documented, reviewed, and actionable measures are in place to swiftly address any security threats or vulnerabilities. Ensure regular audits and updates to the plan to maintain its efficacy.",True
+83,"An action protocol should be prepared for the occasion of a successful security breach. The system should be tested and kept as invulnerable as possible, but the staff should also be trained to take action to minimize damage in case of a successful attack on the System.",responsibility,True,"Title: Comprehensive Action Protocol for Handling Security Breaches
+
+Description: As a security officer, I want to have a clearly defined action protocol to follow in the event of a successful security breach so that the potential damage can be minimized swiftly and responsibly.
+
+Work: Develop and implement a detailed action protocol for security breaches, continuously test the system for vulnerabilities, and conduct regular training sessions for staff to ensure they are prepared to respond effectively to breaches.",True
+84,People flow management related systems and hardware specific security risk are recognized mitigated. Possibility of system failure scenarios tested and possible physical harm from these failures consider. Backup plan ready for full system failure.,responsibility,True,"Title: Comprehensive Risk Management and Mitigation for People Flow Systems
+
+Description: As a system developer, I want to recognize and mitigate security risks specific to people flow management systems and hardware, test failure scenarios, and prepare a backup plan for full system failure, so that we can responsibly prevent potential physical harm and ensure system reliability.
+
+Work: 
+1. Identify and document potential security risks associated with people flow management systems and hardware.
+2. Develop and implement strategies for mitigating identified risks.
+3. Conduct comprehensive testing of system failure scenarios to understand potential impacts and vulnerabilities.
+4. Evaluate possible physical harm that could arise from system failures.
+5. Create, document, and test a robust backup plan to ensure operational continuity in the event of a total system failure.
+6. Regularly review and update risk management processes to maintain accountability and integrity.",True
+85,Understandable description what AI system does and don’t do described for people working along side the system. Insides of the people working along side of these systems heard and involved in the design.,transparency,True,"Title: Enhanced Communication for AI Transparency
+
+Description: As a team member working alongside the AI system, I want to receive clear and understandable explanations of what the AI system does and doesn't do, so that I can effectively collaborate and make informed decisions.
+
+Work: Develop and integrate a comprehensive communication strategy, including detailed documentation, intuitive interfaces, and regular feedback sessions with team members to ensure that their insights and experiences are considered in the AI system's design process.",True
+86,"All the digitalized aspects of border control need to be trained for as many exceptional or rare cases as possible, and a human officer should monitor the digitalized border control.",trust,True,"Title: Ensuring Reliability and Oversight in Digitalized Border Control
+
+Description: As a border security officer, I want to ensure that digitalized border control systems are trained for exceptional or rare cases and have continuous human oversight so that travelers trust in the fairness and effectiveness of border processes.
+
+Work: Implement comprehensive training for digital systems to recognize exceptional and rare cases, and establish protocols for constant human officer monitoring of digitalized decisions to ensure correct results and maintain public trust.",True
+87,A function that alerts the chief security officer when something unusual happens in the system and someone accesses it from an atypical source.,trust,True,"Title: System Anomaly Alert for Enhanced Security
+
+Description: As a Chief Security Officer, I want to be alerted when the system is accessed from an atypical source, so that I can ensure the security and integrity of the organization's data and systems by responding promptly to potential threats.
+
+Work: Develop and implement a monitoring function that detects unusual access patterns, generates real-time alerts for atypical sources, and sends notifications to the Chief Security Officer, ensuring the system's trustworthiness and effectiveness in safeguarding sensitive information.",True
+88,"Cyber security of the system should be varified by testing by multiple professional parties, not just one.",trust,True,"Title: Multi-Party Security Verification for Enhanced Trust
+
+Description: As an end user, I want the cyber security of the system to be verified by multiple professional parties so that I can trust that the system is secure and effectively protected against threats.
+
+Work: Engage multiple independent cyber security firms to conduct comprehensive testing and validation of the system's security measures, ensuring a robust and trustworthy evaluation process.",True
+89,"A regular testing protocol should be in place, to ensure the security of the system and protect against threats. The system should be kept updated and its resilience tested in regular Intervals.",transparency,True,"Title: Ensuring Transparent Security Protocols for AI Systems
+
+Description: As a system administrator, I want to regularly verify the security protocol updates and testing intervals so that there is transparency in maintaining system integrity and protecting against potential threats.
+
+Work: Develop and document a transparent testing protocol, ensure regular updates are communicated clearly, and establish a public log of testing intervals and security enhancements.",True
+90,Privacy plan should be placed in the internet page and linked to social media for everyone to see clearly.,transparency,True,"Title: Clear Accessibility of Privacy Plan on Public Platforms
+
+Description: As a concerned internet user, I want to easily find and read the privacy plan on the organization's webpage and their social media channels so that I can understand how my data is being managed and feel assured of transparent practices.
+
+Work: Ensure the privacy plan is prominently displayed on the website's front page and embedded in social media profiles for clear visibility, accompanied by straightforward navigation links to access the full document.",True
+91,System should have Help line number to call or help button in an app in the system so that responsible parties can either fix the problem or provide alternative assistance.,beneficence,True,"Title: Accessible Support for User Benefit
+
+Description: As a user, I want to have access to a helpline number or help button in the app so that I can quickly receive assistance or alternative solutions in case of issues, ensuring my needs and well-being are prioritized.
+
+Work: Integrate a dedicated help button within the app that redirects users to a helpline service. Ensure that the helpline is easily accessible, responsive, and capable of providing the necessary support or alternative solutions promptly. Test the feature for effectiveness and user satisfaction.",True
+92,"Authentication measures for human oversight determined (e.g., physical access). Override/oversight measures tested for vulnerabilities and considered from cybersecurity perspective.",trust,True,"Title: Ensuring Robust Oversight with Secure Authentication
+
+Description: As a system administrator, I want to ensure that authentication measures for human oversight are robust and tested for vulnerabilities so that the system remains trusted, secure, and effective from a cybersecurity perspective.
+
+Work: 
+- Determine appropriate authentication measures for human oversight, including physical access controls.
+- Conduct thorough vulnerability testing on override and oversight measures.
+- Incorporate cybersecurity best practices to address any identified weaknesses.
+- Document the entire process and results to confirm the integrity and trustworthiness of the system.
+- Regularly review and update oversight measures to maintain ongoing system security and trust.",True
+93,"The passenger must be presented with any physical safety concerns of the system, analyzed and provided with assurance that no risk exist or some estimaton on the risk. (E.g. system might be exploited to track some imporant person's movements and plan physical assault on her or track peaks in terminal usage to plan terrorist activities for maximum damage). Such a estimation/statement could be provided as a pop-up or part of info page /FAQ.",non-maleficence,True,"Title: Risk Awareness and Assurance for System Safety
+
+Description: As a passenger, I want to be informed of any physical safety concerns related to the system so that I can understand the potential risks and receive assurances or risk estimations to make informed decisions.
+
+Work: Analyze the system for any physical safety concerns and create a comprehensive report. Develop user-friendly content that communicates these safety assessments, including risk estimations or assurances, via a pop-up or as part of an information page/FAQ section. Ensure that the communication is clear, concise, and accessible to all users.",True
+94,"Employees have been trained to a) understand the system as a whole, b) understand the new processes, c) understand in detail the parts of the system they are actively working with, and (if relevant), d) operate any parts of the system they may need to (if not normally, then perhaps in case of unforeseen issues).",responsibility,True,"Title: Comprehensive Training for Responsible System Usage
+
+Description: As an employee, I want to be thoroughly trained to understand the system as a whole, the new processes, the specific parts I work with, and any additional operations for unforeseen issues, so that I can responsibly contribute to the system's reliability and effectiveness.
+
+Work: Develop and implement a comprehensive training program that covers the entire system's functionality, ensures understanding of new processes, provides detailed insight into specific parts of the system for each role, and includes operational procedures for handling unforeseen issues, ensuring employees are accountable and equipped with the necessary knowledge and skills.",True
+95,The number of employees that need to be present to take over in case of any unforeseen issues has been determined. The relevant employees have been instructed how to take over in case any part of the process automation Fails.,responsibility,True,"Title: Ensuring Human Oversight in Process Automation
+
+Description: As a Process Manager, I want to have a designated number of employees ready to take over in case of any unforeseen issues in process automation so that we maintain accountability and smooth operation through human intervention when necessary.
+
+Work: Determine the required number of employees for potential intervention, instruct and train them on procedures for taking over failed processes, and ensure clear communication of responsibilities to uphold accountability in operations.",True
+96,The system does not allow access to any vulnerable parts of the system to unauthorized Personnel.,trust,True,"Title: Secure Access Management for Trustworthy Systems
+
+Description: As a System Administrator, I want to ensure that unauthorized personnel cannot access vulnerable parts of the system so that the integrity and security of the system are maintained and trust in our system is upheld.
+
+Work: Implement role-based access controls, authenticate user identities, regularly audit access logs, and ensure proper encryption and security protocols are in place to prevent unauthorized access to sensitive system areas.",True
+97,"The system is clear and intuitive to use, and leaves as little as possible for interpretation. It will not offer possibilities for passengers to do a wrong, dangerous or forbidden thing.",non-maleficence,True,"Title: Intuitive and Safe Passenger Navigation
+
+Description: As a passenger, I want to interact with a system that is clear and intuitive, minimizing opportunities for mistakes or misuse, so that I am protected from making wrong, dangerous, or forbidden choices.
+
+Work: Design and develop an intuitive user interface by conducting extensive user testing to identify potential areas of misinterpretation or error and implement safety protocols that prevent dangerous or forbidden actions.",True
+98,"Human oversight procedures determined (e.g. when/how an employee can take control of the system or its tasks, or even shut it down).",responsibility,True,"Title: Human Oversight and Control Over AI Systems
+
+Description: As a responsible AI systems overseer, I want to establish clear human oversight procedures, including when and how an employee can take control or shut down the system, so that accountability and integrity in AI operations are maintained.
+
+Work: Develop comprehensive guidelines and protocols for human intervention in AI processes, ensure these procedures are communicated and understood by all relevant personnel, and implement training programs to facilitate effective human oversight and decision-making.",True
+99,Intended system use clearly defined so that misuse can be determined. Expected outcomes/outputs determined for each process  employees should know how to expect the system to behave so they can determine if something is off. Human oversight procedures determined (e.g. when/how an employee can take control of the system or even shut it down).,responsibility,True,"Title: Defined System Use and Human Oversight to Ensure Responsible Use  
+
+Description: As an employee, I want to have a clearly defined system use and expected outcomes, so that I can identify misuse and take corrective action.  
+
+Work: Determine and document the intended system use and expected outcomes/outputs for each process. Develop guidelines and training for employees to recognize abnormal system behavior. Implement human oversight procedures detailing when and how an employee can take control of the system or shut it down if necessary.",True
+100,Intended system use clearly defined so that misuse can be determined. Liability established through contracts.,responsibility,True,"Title: Clear Definition of System Use and Liability Contracts  
+Description: As a responsible stakeholder, I want to have the intended use of the system clearly defined and establish liability through contracts so that misuse can be determined and properly addressed.  
+Work: Define and document the intended use of the system in collaboration with legal and technical teams, develop comprehensive contracts outlining responsibilities and liabilities, and implement a monitoring mechanism to identify and address misuse.",True
+101,Documentation that clarifies the assigned responsible person for each part of the system.,responsibility,True,"Title: Clear Assignment of Responsibility for System Components
+
+Description: As an internal auditor, I want to identify the responsible person for each part of the system so that I can ensure accountability and integrity in system operations.
+
+Work: Develop and maintain documentation that transparently clarifies the assigned responsible person for each part of the system, ensuring it is accessible and up-to-date for all stakeholders involved.",True
+102,User and feasibility studies done for the planned system. Testing and scenarios before building. Feasible places for system automation Recognized.,transparency,True,"Title: Enhance System Transparency and Feasibility
+
+Description: As a system analyst, I want to conduct user and feasibility studies for the planned system, ensuring that all testing and scenarios are considered before building so that the system's transparency and effectiveness are communicated and understood by all stakeholders. 
+
+Work: Identify feasible areas for system automation and articulate a clear testing strategy that encompasses all potential use cases to ensure comprehensive transparency across all phases of development.",True
+103,Smart terminal system is tested from passenger point of view. Versatile scenarios and users are tested. Viewpoint of children is also covered.,justice and equity,True,"Title: Inclusive Testing for Smart Terminal System
+
+Description: As a passenger advocate, I want the smart terminal system to be tested across versatile scenarios and include diverse users, including children, so that the system ensures equity and fairness for all users.
+
+Work: 
+- Develop a comprehensive testing plan that includes scenarios for various passenger types, including adults, children, and individuals with disabilities.
+- Conduct user testing sessions with a diverse group of participants representing different demographics.
+- Analyze testing results to identify any inequities or biases in the system's performance.
+- Make necessary adjustments to the smart terminal system to address any identified issues, ensuring fair and unbiased operation for all users.
+- Document the testing process and outcomes to demonstrate commitment to justice and fairness.",True
+104,Role-based access and rights implemented. Management and documentation of these roles Done.,transparency,True,"Title: Clear Role-Based Access Management and Documentation
+
+Description: As a system auditor, I want to easily understand and verify the role-based access and rights implemented so that I can ensure transparent and secure access control within the organization.
+
+Work: Develop a comprehensive documentation system detailing the access rights and roles for all users, ensuring that this information is easily accessible and understandable for auditing purposes. Implement a management system that tracks changes and updates to roles and rights in a transparent manner.",True
+105,"A regular testing protocol should be in place, to ensure the security of the system and protect against threats. The system should be kept updated and its resilience tested in regular Intervals.",trust,True,"Title: Regular Security Testing and Updates for System Trustworthiness  
+
+Description: As a security-conscious user, I want the system to undergo regular testing and updates so that I can trust its resilience against potential security threats.  
+
+Work: Establish a protocol for regular security testing, implement systematic updates to the system, and conduct resilience checks at consistent intervals to ensure the system's security and build user trust.",True
+106,"A human should surveil the actions of every AI System, particularly safety-critical processes/every AI system should have a designated employee who monitors its performance.",responsibility,True,"Title: Responsible Oversight of AI Systems
+
+Description: As a compliance officer, I want to assign a designated employee to monitor the performance of every AI system so that we ensure accountability and integrity in safety-critical processes.
+
+Work: 
+
+1. Identify and allocate responsibility to specific employees for monitoring each AI system.
+2. Develop a comprehensive monitoring framework that includes regular performance assessments and reporting procedures.
+3. Implement training programs for designated employees on AI system functionalities and ethical oversight.
+4. Establish clear documentation and communication channels for reporting any anomalies or concerns.
+5. Regularly review and update monitoring protocols to align with industry standards and regulatory requirements.",True
+107,"Backup options and system downtime protocols should be established before launch, and all relevant stakeholders should be informed about the downtime protocols.",transparency,True,"Title: Transparent Communication of Backup and Downtime Protocols
+
+Description: As a stakeholder, I want to be fully informed about the backup options and system downtime protocols so that I can understand the impact on operations and plan accordingly.
+
+Work: Establish procedures for backup options and downtime protocols, document them clearly, and communicate these to all relevant stakeholders before launch, ensuring processes are straightforward, understandable, and accessible.",True
+108,"Staff should finish training for emergency situations, to calm the passengers and guide them in a pre-planned way to safety efficiently. The system should also be ensured to communicate safety instructions to passengers Efficiently.",beneficence,True,"Title: Ensuring Passenger Safety during Emergencies through Effective Communication and Guidance
+
+Description: As an emergency response staff member, I want to effectively calm passengers and guide them to safety using pre-planned strategies so that we can ensure their well-being and safety during emergency situations.
+
+Work: Develop comprehensive training programs for emergency response staff to enhance their ability to manage and calm passengers efficiently during emergencies. Implement a robust system that communicates clear safety instructions to passengers, ensuring that the information is easily understandable and accessible to all. Additionally, regularly test and update the communication system to maintain its effectiveness and reliability in diverse emergency scenarios.",True
+109,Clear log and access report generated by the system on passengers from data collected. The system can also notify passengers on the period thier data will be kept while collecting the data.,transparency,True,"Title: Clear Logging and Access Transparency with Notification
+
+Description: As a passenger, I want to receive clear logs and reports on how the system accesses my data and to be notified about the data retention period, so that I can understand and trust the handling of my personal information.
+
+Work: 
+1. Implement a feature that generates detailed logs and access reports for passengers' data.
+2. Create an automated system to notify passengers regarding the duration their data will be retained at the point of data collection.
+3. Ensure these notifications and reports are clear, concise, and easily accessible to passengers.
+4. Test the system to confirm accurate logging, access transparency, and effective communication to passengers.
+5. Document the process to maintain transparency and for regulatory compliance purposes.",True
+110,audition plan needs to be in place. System and its compnents are build and selected auditability in mind.,responsibility,True,"Title: Implement Auditing for AI System Accountability
+
+Description: As a compliance officer, I want to ensure that an auditing plan is in place and that system components are selected and built with auditability in mind so that the organization can be held accountable for its AI technologies.
+
+Work: Develop and implement an auditing framework, select components with built-in auditability features, document auditing processes, and conduct regular audits to ensure compliance with ethical responsibility standards.",True
+111,Audit requirements have been written out in system description. Requirements have been discussed among all relevant parties related to systems development.,transparency,True,"Title: Transparently Documented and Discussed Audit Requirements
+
+Description: As a systems development stakeholder, I want to ensure all audit requirements are clearly documented and discussed with all relevant parties so that there is a shared understanding and transparency in the development process.
+
+Work: Document all audit requirements in the system description, organize meetings to discuss these requirements with all relevant stakeholders, and record meeting notes to ensure transparency and accountability in the sharing and understanding of requirements.",True
+112,DPIA must be made to meet the given standards. If needed DPIA is aviabler Relevant stakeholders for the SMART terminal system need to beinformed about the required level of standards for Data and privacy when operating as a part of SMART terminal system.,transparency,True,"Title: Ensuring Transparency in Privacy Standards for SMART Terminal System
+
+Description: As a stakeholder, I want to be informed about the required data and privacy standards, so that I can understand and comply with the necessary regulations when operating the SMART terminal system.
+
+Work: Conduct a Data Protection Impact Assessment (DPIA) to meet the given standards, ensure DPIA documents are accessible to stakeholders, and communicate the required level of data and privacy standards clearly to all relevant parties involved in the SMART terminal system.",True
+113,The system is designed and architecture is planned privacy and data protections auditability in mind. Clear documentation on how API and services joining the SMART terminal system will affect the privacy and data Protection.,privacy,True,"Title: Ensure Privacy and Data Protection Auditability for SMART Terminal System
+
+Description: As a privacy-conscious user, I want to ensure the system is designed with privacy and data protection auditability in mind so that my personal information remains secure and compliant with regulations.
+
+Work: Design and implement system architecture focusing on privacy and data protection auditability, and provide comprehensive documentation detailing how API and services integration affect these aspects.",True
+114,Smart terminal system is a system of systems. The core system linking everything together needs to provide description responsibilities among systems linking to the system before service can come as partner to the system. Also requirements of information sharing and processing should be provided both ways.,transparency,True,"Title: Ensuring System Transparency for Partnership Integration
+
+Description: As a system partner, I want to clearly understand the responsibilities and information sharing requirements among interconnected systems so that I can ensure a seamless integration and collaboration.
+
+Work: Define and document detailed responsibilities of each connected system, and establish clear protocols for bilateral information sharing and processing to be provided before any service can integrate as a partner.",True
+115,"The system is created from modular parts, to what extent possible.",transparency,True,"Title: Modular System for Enhanced Transparency
+
+Description: As a technology analyst, I want to understand the system's structure through its modular parts so that I can easily communicate and explain its functionalities to stakeholders.
+
+Work: Ensure the system is designed using clear, modular parts with comprehensive documentation, allowing for straightforward analysis and communication of each component's functionality and purpose.",True
+116,The system is audited by 3rd party experts as required by regulations/laws,responsibility,True,"Title: Ensuring Accountability through Third-Party Audits
+
+Description: As a regulatory authority, I want to have the system audited by independent 3rd party experts so that the AI system's compliance with regulations and laws is verified effectively.
+
+Work: Contract qualified third-party audit firms, schedule regular audits as per legal requirements, facilitate access to necessary system data and documentation, address any non-compliance findings promptly, and maintain records of all audit results and corrective actions taken.",True
+117,Developers should be aware that good usability instructions for developing are utilized when making the booking features / systems etc.,transparency,True,"Title: Transparent Usability Guidelines for Booking Feature Development
+
+Description: As a developer, I want to ensure good usability instructions are utilized when creating booking features so that users can understand and effectively use the system.
+
+Work: Conduct an audit of existing usability guidelines, revise them to enhance clarity and coherence, and implement transparent documentation and communication processes for usability practices during booking feature development.",True
+118,Datalifecycle plan is made by the information management team for the developers to use from the beginning of the development phase.,privacy,True,"Title: Privacy-focused Data Lifecycle Planning
+
+Description: As a developer, I want to implement a data lifecycle plan provided by the information management team from the beginning of the development phase so that users' personal data is responsibly managed and privacy is safeguarded throughout the project lifecycle.
+
+Work: Collaborate with the information management team to integrate the data lifecycle plan into the development process, ensuring data is collected, stored, used, and disposed of in compliance with privacy regulations and best practices.",True
+119,Criteria list of different purposes detected from the information flow should be made and Maintained.,transparency,True,"Title: Establishment and Maintenance of Transparent Criteria Lists for Information Flow
+
+Description: As a system auditor, I want to ensure a criteria list of different purposes detected from the information flow is maintained and accessible so that all stakeholders can understand the rationale behind data processing activities.
+
+Work: Define clear criteria for purposes detected in information flows, regularly update these criteria lists, and provide easy access to these lists for all relevant stakeholders to enhance understanding and accountability.",True
+120,The flow of identity checking should be simulated and tested against identity teft issues.,non-maleficence,True,"Title: Identity Verification Simulation Against Theft
+
+Description: As a security analyst, I want to simulate and test the flow of identity checking so that identity theft issues can be proactively identified and mitigated.
+
+Work: Develop and implement simulation tests for identity verification processes, identify potential vulnerabilities, and ensure robust security measures are in place to prevent identity theft. Monitor and update the system regularly to adapt to emerging threats.",True
+121,System keeps track of all button presses and other actions and logs them. Activity associated with user accounts (where applicable).,transparency,True,"Title: Transparent Logging of User Actions
+
+Description: As a user, I want to be informed about how my button presses and other activities are logged so that I understand what data is being collected about my interactions with the system.
+
+Work: 
+1. Develop a user-friendly interface explaining the logging processes and the type of data being recorded.
+2. Clearly communicate which activities are linked to user accounts and how the data will be used.
+3. Implement consent features allowing users to review and agree to the logging process.
+4. Provide easily accessible documentation on the data logging policy and any updates to it.",True
+122,The product shall ensure that it can only be accessed by authorized users. The product will be able to distinguish between authorized and unauthorized users in all access attempts. ,trust,True,"Title: Secure Access for Authorized Users
+
+Description: As a security-conscious user, I want the product to ensure that only authorized users can access it, so that I can trust the system to protect sensitive information.
+
+Work: Implement robust authentication mechanisms to accurately distinguish between authorized and unauthorized users during all access attempts, ensuring comprehensive security protocols and regular audits are in place to maintain the integrity of user access control.",True
+123,The system shall offer a display of all the Events in the exercise. ,transparency,True,"Title: Transparent Display of Exercise Events
+
+Description: As a system user, I want to have a clear and accessible display of all the events in the exercise so that I can understand and follow the exercise process effectively.
+
+Work: Implement a user interface that lists all exercise events in a clear, organized manner, ensuring each event is labeled and explained sufficiently for user comprehension. Include tooltips or a help section for further clarification and ensure the information is easily accessible and user-friendly.
+",True
+124,Only registered realtors shall be able to access the system.,privacy,True,"Title: Restrict Access to Authorized Personnel Only
+
+Description: As a data privacy officer, I want to ensure that only registered realtors are able to access the system so that unauthorized access is prevented and personal data is protected.
+
+Work: Implement secure authentication and authorization mechanisms to verify realtor registrations, and ensure that access logs are maintained to monitor access activities for compliance with privacy standards.",True
+125,Every user of the system shall be authenticated and authorized.,privacy,True,"Title: Secure User Authentication and Authorization
+
+Description: As a system administrator, I want to ensure every user of the system is authenticated and authorized so that their privacy and personal data are protected against unauthorized access.
+
+Work: Implement a robust authentication and authorization mechanism that includes multi-factor authentication, role-based access control, and regular security audits to maintain high privacy standards.",True
+126,The product shall prevent its data from incorrect data being introduced.,trust,True,"Title: Ensure Data Integrity for Trustworthiness
+
+Description: As a data analyst, I want to ensure that only accurate and verified data is introduced into the system so that the integrity and trustworthiness of the data are maintained.
+
+Work: Implement validation mechanisms and error-check protocols to prevent incorrect data entry, perform regular audits for data accuracy, and provide user training on data validation processes.",True
+127,Only authorized users shall have access to students' personal information.,privacy,True,"Title: Secure Access to Personal Information
+
+Description: As a school administrator, I want to ensure that only authorized users have access to students' personal information so that we can protect their privacy and comply with data protection regulations.
+
+Work: Implement role-based access controls, conduct regular access audits, and ensure data encryption to safeguard student information from unauthorized access.",True
+128,The system shall protect private information in accordance with the organization's information policy.,trust,True,"Title: Ensured Privacy Protection for Trustworthiness
+
+Description: As a data subject, I want the system to protect my private information in accordance with the organization's information policy so that I can trust that my data is secure and handled responsibly.
+
+Work: Review and implement the organization's information policy for data protection, regularly audit data handling processes, use encryption measures, ensure role-based access, and establish a mechanism for reporting data breaches promptly.",True
+129,The system shall have basic data integrity checking to reduce the possibility of incorrect or invalid data being introduced.,responsibility,True,"Title: Ensure Data Integrity for Responsible Handling
+
+Description: As a data analyst, I want to ensure data integrity checking is in place so that the data being processed and used is valid and accurate for responsible decision-making.
+
+Work: Implement basic and effective data integrity validation mechanisms to identify and prevent incorrect or invalid data from entering the system, ensuring accountability and accuracy in data processing and reporting.",True
+130,The system shall be built such that it is as secure as possible from malicious interference.,trust,True,"Title: Ensuring System Security Against Malicious Interference
+
+Description: As an end-user, I want the system to be as secure as possible from malicious interference so that I can trust the technology to protect my data and function reliably.
+
+Work: Implement robust security measures, including encryption and regular security audits, to safeguard the system against unauthorized access and ensure ongoing trustworthiness.",True
+131,The product must comply with Sarbanes-Oxley.,responsibility,True,"Title: Ensuring Sarbanes-Oxley Compliance for Financial Integrity  
+Description: As a compliance officer, I want to ensure that our product complies with Sarbanes-Oxley regulations so that we maintain accountability and integrity in our financial reporting.  
+Work: Conduct a comprehensive audit of the product's financial reporting processes to ensure they meet Sarbanes-Oxley requirements, implement necessary changes to any compliance gaps, and establish ongoing monitoring to maintain adherence to these regulations.",True
+132,The system shall prevent malicious attacks including denial of service.,trust,True,"Title: Safeguard User Data and System Integrity
+
+Description: As a system user, I want to ensure the protection of my data and seamless service availability so that I can trust the system to function securely and effectively.
+
+Work: Implement advanced security measures, including robust firewall configurations and anomaly detection algorithms, to prevent and mitigate malicious attacks such as denial of service.",True
+133,The product shall conform to the Americans with Disabilities Act.,dignity,True,"Title: Ensure Access for All Users
+
+Description: As a user with disabilities, I want to access and interact with the product seamlessly so that my inherent dignity and rights are respected and upheld.
+
+Work: Audit the product for compliance with the Americans with Disabilities Act (ADA), implement necessary accessibility features, and conduct usability testing with individuals with disabilities to ensure full access and inclusion.",True
+134,The product shall have the ability to receive automatic software updates as new threats emerge. 100% of customers will be able to receive automatic software updates transmitted to the installed product.,responsibility,True,"Title: Ensure Continuous Software Update Responsiveness
+
+Description: As a responsible software developer, I want to facilitate automatic software updates for users so that their systems remain protected against emerging threats.
+
+Work: Develop an automatic update mechanism that delivers software updates to all installed products, ensuring 100% of customers receive timely protection against new threats and certifying the transmission process is reliable and secure.",True
+135,The System shall meet all applicable accounting standards. The final version of the System must successfully pass independent audit performed by a certified auditor.,transparency,True,"Title: Ensure Transparent Compliance with Accounting Standards
+
+Description: As a financial auditor, I want to verify that the System meets all applicable accounting standards and has successfully passed an independent audit, so that stakeholders can have confidence in the accuracy and integrity of the financial information.
+
+Work: Conduct a thorough evaluation of the System to ensure it adheres to all relevant accounting standards, collaborate with a certified auditor to facilitate an independent audit, and provide detailed reports to demonstrate compliance and transparency to stakeholders.",True
+136,The System shall be able to automatically backup business data and restore them on demand.,non-maleficence,True,"Title: Secure Automated Data Backup and Recovery
+
+Description: As a business manager, I want to ensure automatic data backup and reliable restoration on demand so that our business can prevent data loss and mitigate risks from potential harm.
+
+Work: Implement a robust data backup system that regularly backs up data automatically and allows for quick and efficient restoration upon request, ensuring data integrity and security to prevent potential damages or losses.",True
+137,"The website shall make its user aware of its information practices before collection data from them via a Privacy Policy, accessible on all pages of the website.",transparency,True,"Title: Accessible Privacy Practices Notification
+
+Description: As a website user, I want to be aware of the website's information practices before any data collection takes place so that I can make informed decisions about my personal information.
+
+Work: Create and implement a Privacy Policy that details the website's information practices. Ensure the Privacy Policy is easily accessible on all pages of the website, with clear and understandable language. Include links to the Privacy Policy on each page and provide users with a prominent notification about the policy before any data collection occurs. Test the accessibility and visibility of the Privacy Policy to confirm it meets transparency requirements.",True
+138,The system shall notify customers of changes to its information policy.,transparency,True,"Title: Transparent Communication of Policy Changes
+
+Description: As a customer, I want to be notified of changes to the information policy so that I can understand how my data is being used and make informed decisions.
+
+Work: Ensure the system sends timely and clear notifications to all customers whenever there are changes to the information policy, including details about what has changed and how it affects them.",True
+139,The system shall reveal private information only in compliance with the organizations information policy.,trust,True,"Title: Ensuring Confidential Information is Released Responsibly
+
+Description: As a privacy-conscious user, I want the system to reveal private information only in compliance with the organization's information policy so that I can trust that my personal data is handled securely and responsibly.
+
+Work: Review and implement the organization's information policy guidelines within the system, ensuring that all private information disclosures adhere strictly to these policies, and regularly audit the system's compliance with privacy standards to maintain user trust.",True
+140,All credit card information will be encrypted in the database.,transparency,True,"Title: Ensure Transparency in Credit Card Data Encryption
+
+Description: As a responsible organisation, I want to transparently encrypt all credit card information in the database so that customers can trust that their sensitive data is securely handled.
+
+Work: Implement encryption protocols for all credit card data stored in the database, and provide clear documentation and communication to stakeholders on how data security and transparency are achieved and maintained.",True
+141,Daily usage statistics should be logged  and accessible by the administrator.,transparency,True,"Title: Transparent Access to Daily Usage Statistics
+
+Description: As an administrator, I want to access and understand daily usage statistics of the system so that I can provide clear insights and documentation about system operations and performance.
+
+Work: Implement a logging system that records daily usage statistics in a transparent manner, ensuring the logs are comprehensive, easily understandable, and accessible to administrators. Provide documentation and user interface elements that facilitate the clear interpretation of this data.",True
+142,For leads that process longer than 25 seconds the system will record the event and duration,transparency,True,"Title: Transparency in Processing Time Monitoring
+
+Description: As a system administrator, I want to transparently monitor and record events and duration for lead processing that takes longer than 25 seconds so that I can ensure accountability and improve system efficiency.
+
+Work: Implement a logging mechanism that accurately captures and stores event data and duration for any lead processing exceeding 25 seconds, generate regular reports to provide insights, and ensure this information is accessible to authorized personnel for review and system optimization.",True
+143,The product shall protect the identity of the players. The product shall provide players no access to information that might reveal the identity of another player.,privacy,True,"Title: Ensuring Player Anonymity
+
+Description: As a player, I want to enjoy the game without access to any personal information that might reveal the identity of other players so that every player's privacy is preserved and the gaming experience remains fair and secure.
+
+Work: Implement data anonymization techniques and access restrictions to remove or obfuscate personal identifiers from player profiles and interactions, ensuring no access to confidential information about other players. Conduct thorough testing to confirm privacy is maintained and regularly audit the system for compliance with privacy standards and policies.",True
+144,"The product shall be available to players who understand English, Spanish and French. The product shall allow the user to select the language upon accessing the product.",justice and equity,True,"Title: Multilingual Access for Inclusive Gaming
+
+Description: As a global player, I want to select my preferred language (English, Spanish, or French) upon accessing the product so that the game is accessible and fair for all.
+
+Work: Implement a language selection feature at the start of the product, ensuring that all interfaces, instructions, and content are fully translated and functional for each language option available (English, Spanish, and French). Validate that the selection process is seamless and provides equal access across the supported languages.",True
+145,The system shall have high availability every day of the year. The system must be available for use between 12:00AM and 6:00PM all days of the year.,responsibility,True,"Title: Ensuring System Availability for Responsible Use
+
+Description: As an IT Operations Manager, I want the system to have high availability every day of the year, ensuring that it is accessible between 12:00 AM and 6:00 PM so that all users can rely on its consistent performance without disruption.
+
+Work: Monitor system uptime continuously, implement redundancy mechanisms, and perform regular maintenance checks to ensure uninterrupted service availability within the specified timeframe.",True
+146,The product shall provide GUI based Monitoring Services. System Administrators shall monitor message exchanges will predict and determine problems and will also provide internal and external support.,transparency,True,"Title: Transparent Monitoring for System Administrators
+
+Description: As a System Administrator, I want to have a GUI-based Monitoring Service that allows me to transparently and effectively monitor message exchanges, predict potential issues, and provide internal and external support so that I can ensure system reliability and maintain open communication about system performance.
+
+Work: Develop and implement a user-friendly GUI-based monitoring interface that clearly displays real-time message exchanges and system performance metrics. Incorporate predictive analytics tools to identify and alert about potential problems. Provide detailed explanations and documentation for troubleshooting, ensuring clarity and understanding for internal and external support. Ensure that all monitoring activities and data visualizations are transparent and easily understandable to maintain system transparency and trust.",True
+147,The product shall be available 99% of the time. Rationale: To avoid service interruption during busiest customer service response periods. The product shall be available 99.99% of the time for regular business days.,responsibility,True,"Title: Ensure High Availability for Continuous Service
+
+Description: As a business operator, I want to ensure the product is available 99% of the time during peak customer service periods and 99.99% during regular business days so that our customers can consistently access services without interruption.
+
+Work: Implement robust system monitoring and maintenance protocols, optimize infrastructure for resilience, and establish failover mechanisms to guarantee the system meets availability targets. Document and communicate these measures to stakeholders for accountability and transparency in maintaining service uptime.",True
+148,The product shall information Security. The product shall enable privacy by encryption WS-Security and Integrity Checking,trust,True,"Title: Ensuring Secure and Private Communication
+
+Description: As an end-user, I want to ensure that my data is securely encrypted and its integrity verified, so that I can trust the system with my sensitive information.
+
+Work: Implement WS-Security, including encryption and integrity checking mechanisms, to safeguard user data and build trust with users by proving the system's capability to securely handle information.",True
+149,The product shall have audit capabilities.The product shall store messages for a minimum of one year for audit and transaction tracking purposes.,transparency,True,"Title: Ensuring Transparent Audit Capabilities for Compliance
+
+Description: As a compliance officer, I want to have the ability to audit message transactions and access stored messages for a minimum of one year so that I can ensure transparency in transaction tracking and verify adherence to compliance regulations.
+
+Work: Implement secure storage mechanisms for messages with a minimum retention period of one year, develop accessible audit functionalities to allow compliance officers to track and review transaction history, and document the processes to ensure clear understanding and proper use of audit features.",True
+150,All changes  updates  and additions to the WCS system shall be updated in the WCS Developer and WCS User Guides. Every change must be reflected in WCS system documentation,transparency,True,"Title: Comprehensive Documentation for WCS System Updates
+
+Description: As a WCS system user, I want to ensure that all changes, updates, and additions to the WCS system are documented in the WCS Developer and WCS User Guides so that I can have a clear understanding of the system's current functionality and capabilities.
+
+Work: Ensure that every change made to the WCS system is thoroughly documented in both the WCS Developer and WCS User Guides, providing clear and detailed explanations of the updates, additions, and modifications. Review and verify that all documentation accurately reflects the current state of the WCS system and is easily accessible to users.",True
+151,The system shall display and embed in each message a date/timestamp of when the message was sent.,transparency,True,"Title: Ensure Message Transparency with Timestamp
+
+Description: As a user, I want to see a date/timestamp embedded in each message so that I can understand when exactly a message was sent, fostering transparency in communication.
+
+Work: Implement a system feature that automatically adds a date/timestamp to each message as it is sent, ensuring clear and accessible information about the timing of message exchanges. Test the feature to ensure accuracy and visibility across different devices and interfaces.",True
+152,All network transactions that involve financial information or personally identifiable information shall be encrypted.,trust,True,"Title: Secure Encryption of Sensitive Transactions Description: As a concerned user, I want all network transactions involving financial or personally identifiable information to be encrypted so that my data remains secure and I can trust the system with my sensitive information. Work: Implement robust encryption protocol for network transactions, test thoroughly for vulnerabilities, and ensure compliance with security standards to maintain user trust in data protection.",True
+153,System use shall not cause any harm to human users.,non-maleficence,True,"Title: Ensure Harm-Free System Usage
+
+Description: As a concerned human user, I want to use the system confidently so that I am assured it will not cause me any harm.
+
+Work: Conduct thorough testing and validation of the system to identify and mitigate any potential risks or harmful functionalities, ensuring compliance with safety standards and guidelines. Implement safeguards and continuous monitoring to prevent any harm to users.",True
+154,The system should warn ECA users about the malfunction of the system.,non-maleficence,True,"Title: Malfunction Warning Alert for ECA Users
+
+Description: As an ECA user, I want to be promptly warned about any system malfunctions so that I can avoid any potential harm and make informed decisions.
+
+Work: Implement a real-time alert system to detect and notify users of any malfunctions, ensuring that alerts are clear and actionable.",True
+155,The system shall provide multi language support.,dignity,True,"Title: Inclusive Language Support for Dignity  
+
+Description: As a global user, I want to access and interact with the system in my native language so that my inherent worth and rights are respected and supported through dignified communication.  
+
+Work: Implement multi-language support by integrating robust language translation tools, ensuring accuracy and cultural relevance, and conducting thorough testing to guarantee the system accommodates diverse linguistic needs without compromising user dignity.",True
