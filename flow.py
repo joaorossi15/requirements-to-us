@@ -20,10 +20,10 @@ def model_rag(persist_path: str):
         model=model,
         tokenizer=transformers.AutoTokenizer.from_pretrained("mistralai/Mistral-7B-Instruct-v0.3"),
         task="text-generation",
-        temperature=0.2,
+        temperature=0.1,
         repetition_penalty=1.1,
         return_full_text=True,
-        max_new_tokens=300,
+        max_new_tokens=95,
         device=0
     )
     
@@ -34,7 +34,8 @@ def model_rag(persist_path: str):
 
     {context}
 
-    Now given the context, transform the requirement below into a one line brief description of an ethical user story.
+    Now given the context, transform the requirement below into an ethical user story following the TEMPLATE:
+    Title: <title>\n Description: As a <persona> i want to <do something> <so that>\n Work: <acceptance criteria>
 
     ### REQUIREMENT:
     {requirement} 
