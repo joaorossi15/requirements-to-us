@@ -23,7 +23,7 @@ def model_rag(persist_path: str):
         temperature=0.1,
         repetition_penalty=1.1,
         return_full_text=True,
-        max_new_tokens=95,
+        max_new_tokens=150,
         device=0
     )
     
