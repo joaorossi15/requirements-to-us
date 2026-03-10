@@ -2,7 +2,7 @@ from langchain_community.llms import HuggingFacePipeline
 from langchain_core.prompts import PromptTemplate
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_community.vectorstores import Chroma
-from langchain_core.runnables import RunnablePassthrough
+from langchain_core.runnables import RunnablePassthrough, RunnableLambda
 from transformers import AutoModelForCausalLM, AutoTokenizer
 from peft import PeftModel
 import transformers
@@ -19,6 +19,10 @@ def load_model():
     return model
 
 
+def format_docs(docs):
+    return "\n\n".join(doc.page_content for doc in docs)
+
+
 def model_rag(persist_path: str):
     model = load_model()
     tokenizer = AutoTokenizer.from_pretrained("mistralai/Mistral-7B-Instruct-v0.3")
@@ -27,65 +31,62 @@ def model_rag(persist_path: str):
         task="text-generation",
         model=model,
         tokenizer=tokenizer,
-        temperature=0.1,
+        temperature=0.0,
+        do_sample=False,
         repetition_penalty=1.1,
-        return_full_text=True,
-        max_new_tokens=150,
+        max_new_tokens=300,
+        return_full_text=False,
         device=0
     )
+
+    mistral_llm = HuggingFacePipeline(pipeline=text_generation_pipeline)
 
     prompt_template = """
 ### [INST]
 
-You are an expert in software requirements engineering and AI ethics.
+You are an expert in requirements engineering and AI ethics.
 
-Your task is to transform an ethical requirement for an AI system into an **Ethical User Story (EUS)**.
+Your task is to transform an ethical AI requirement into an Ethical User Story (EUS).
 
-Ethical User Stories translate ethical principles into actionable software requirements using the Agile user story format.
-
-An Ethical User Story must contain two parts:
-
-1. USER STORY
-As a <persona or stakeholder>,
-I want <capability>,
-so that <ethical benefit or protection>.
-
-2. ACCEPTANCE CRITERIA
-Write 2–4 acceptance criteria describing what must be implemented for the requirement to be satisfied.
-Use the Given / When / Then format whenever possible.
-
-Guidelines:
-- The persona should be a realistic stakeholder (user, developer, regulator, system operator, etc.).
-- The capability should operationalize the ethical principle into a system feature.
-- The benefit should clearly describe the ethical goal.
-- Acceptance criteria should be concrete and implementable by developers.
-- Avoid vague language such as "be ethical".
-- Focus on practical system behavior.
-
-Context (ethical principles and background):
-{context}
-
-Ethical requirement:
-{requirement}
-
-Generate the Ethical User Story following this structure exactly:
+Follow this exact template.
 
 Title: <short title>
 
 Description:
-As a <persona>,
-I want <capability>,
-so that <benefit>.
+As a <persona>, I want <capability> so that <ethical benefit>.
 
 Work (Acceptance Criteria):
-- Given ...
-- When ...
-- Then ...
+
+Formatting rules:
+- Write EXACTLY 3 acceptance criteria.
+- Each acceptance criterion MUST be on a single line.
+- Each line MUST follow the format:
+  Given <system state> When <event> Then <system behavior>
+- Do NOT break lines inside a criterion.
+- Do NOT use bullet points.
+- Do NOT explain anything.
+- Acceptance criteria must describe concrete system behavior.
+
+Context:
+{context}
+
+Requirement:
+{requirement}
+
+Return the Ethical User Story exactly in the specified format.
+
+Title: Human Review of High Impact Decisions
+
+Description:
+As a system administrator, I want automated decisions that significantly impact users to be reviewable so that incorrect outcomes can be prevented.
+
+Work (Acceptance Criteria):
+Given the AI system generates a decision affecting a user When the decision confidence is below the configured threshold Then the system must flag the decision for human review.
+Given a flagged decision exists When the administrator opens the review interface Then the system must display the input data, prediction, and confidence score.
+Given the administrator rejects the automated decision When the rejection is confirmed Then the system must cancel the decision and log the override.
 
 [/INST]
 """
-
-    mistral_llm = HuggingFacePipeline(pipeline=text_generation_pipeline)
 
     prompt = PromptTemplate.from_template(prompt_template)
 
@@ -96,11 +97,11 @@ Work (Acceptance Criteria):
         )
     )
 
-    retriever = db.as_retriever()
+    retriever = db.as_retriever(search_kwargs={"k": 2})
 
     rag_chain = (
         {
-            "context": retriever,
+            "context": retriever | RunnableLambda(format_docs),
             "requirement": RunnablePassthrough()
         }
         | prompt
