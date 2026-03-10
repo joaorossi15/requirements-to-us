@@ -63,7 +63,8 @@ Work:
 Rules:
 - Return exactly one Title.
 - Return exactly one Description.
-- Return exactly 2 to 3 Work items.
+- Return exactly 2 to 3 Work/Acceptance Criteria items.
+- If more ideas exist for Work/Acceptance Criteria, select the 3 most important ones.
 - Each Work item must be written on a single line.
 - Do not use bullet points, numbering, or extra labels.
 - Do not explain your answer.
