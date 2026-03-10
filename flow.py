@@ -36,19 +36,52 @@ def model_rag(persist_path: str):
 
     prompt_template = """
 ### [INST]
-Instruction: Based on the AI principles related to the context below, transform the ethical requirement into an ethical user story following the TEMPLATE:
 
-Title: <title>
-Description: As a <persona> I want to <do something> so that <benefit>
-Work: <acceptance criteria>
+You are an expert in software requirements engineering and AI ethics.
 
-Context:
+Your task is to transform an ethical requirement for an AI system into an **Ethical User Story (EUS)**.
+
+Ethical User Stories translate ethical principles into actionable software requirements using the Agile user story format.
+
+An Ethical User Story must contain two parts:
+
+1. USER STORY
+As a <persona or stakeholder>,
+I want <capability>,
+so that <ethical benefit or protection>.
+
+2. ACCEPTANCE CRITERIA
+Write 2–4 acceptance criteria describing what must be implemented for the requirement to be satisfied.
+Use the Given / When / Then format whenever possible.
+
+Guidelines:
+- The persona should be a realistic stakeholder (user, developer, regulator, system operator, etc.).
+- The capability should operationalize the ethical principle into a system feature.
+- The benefit should clearly describe the ethical goal.
+- Acceptance criteria should be concrete and implementable by developers.
+- Avoid vague language such as "be ethical".
+- Focus on practical system behavior.
+
+Context (ethical principles and background):
 {context}
 
-Requirement:
+Ethical requirement:
 {requirement}
 
-Generate the ethical user story following the TEMPLATE above.
+Generate the Ethical User Story following this structure exactly:
+
+Title: <short title>
+
+Description:
+As a <persona>,
+I want <capability>,
+so that <benefit>.
+
+Work (Acceptance Criteria):
+- Given ...
+- When ...
+- Then ...
+
 [/INST]
 """
 
