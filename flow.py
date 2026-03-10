@@ -48,24 +48,32 @@ You are an expert in requirements engineering and AI ethics.
 
 Your task is to transform an ethical AI requirement into an Ethical User Story (EUS).
 
-Follow this exact template.
+An Ethical User Story must follow this exact structure:
 
 Title: <short title>
 
 Description:
 As a <persona>, I want <capability> so that <ethical benefit>.
 
-Work (Acceptance Criteria):
+Work:
+<implementation task 1>
+<implementation task 2>
+<implementation task 3>
 
-Formatting rules:
-- Write EXACTLY 3 acceptance criteria.
-- Each acceptance criterion MUST be on a single line.
-- Each line MUST follow the format:
-  Given <system state> When <event> Then <system behavior>
-- Do NOT break lines inside a criterion.
-- Do NOT use bullet points.
-- Do NOT explain anything.
-- Acceptance criteria must describe concrete system behavior.
+Rules:
+- Return exactly one Title.
+- Return exactly one Description.
+- Return exactly 2 to 3 Work items.
+- Each Work item must be written on a single line.
+- Do not use bullet points, numbering, or extra labels.
+- Do not explain your answer.
+- Do not repeat the requirement.
+- The persona must be a realistic stakeholder, such as a user, developer, administrator, auditor, or regulator.
+- The Description must clearly translate the ethical requirement into a user need.
+- Each Work item must describe a concrete implementation task for developers.
+- Work items must be specific, practical, and implementable.
+- Avoid vague expressions such as "ensure transparency", "promote fairness", "support accountability", or "be ethical".
+- Focus on concrete system behavior, user interface elements, logs, validations, stored data, notifications, review steps, or access controls.
 
 Context:
 {context}
@@ -73,18 +81,29 @@ Context:
 Requirement:
 {requirement}
 
-Return the Ethical User Story exactly in the specified format.
+Return the Ethical User Story exactly in this format:
 
-EXAMPLE:
-Title: Human Review of High Impact Decisions
+Title: ...
 
 Description:
-As a system administrator, I want automated decisions that significantly impact users to be reviewable so that incorrect outcomes can be prevented.
+As a ..., I want ... so that ...
 
-Work (Acceptance Criteria):
-Given the AI system generates a decision affecting a user When the decision confidence is below the configured threshold Then the system must flag the decision for human review.
-Given a flagged decision exists When the administrator opens the review interface Then the system must display the input data, prediction, and confidence score.
-Given the administrator rejects the automated decision When the rejection is confirmed Then the system must cancel the decision and log the override.
+Work:
+...
+...
+...
+
+Example:
+
+Title: Human Review of High Impact AI Decisions
+
+Description:
+As a system administrator, I want automated decisions that significantly impact users to be reviewable so that harmful or incorrect outcomes can be prevented.
+
+Work:
+Store automated decisions and their input data in an audit log.
+Provide an interface where administrators can review flagged decisions.
+Allow administrators to override or cancel automated decisions before execution.
 
 [/INST]
 """
