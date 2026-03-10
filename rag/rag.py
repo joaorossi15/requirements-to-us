@@ -16,12 +16,12 @@ def split_text(docs: list[Document]):
     text_splitter = RecursiveCharacterTextSplitter(
         separators=[
             "\n\n",
-            "\\n",
             "\n",
+            ". ",
             ".",
         ],
-        chunk_size=500,
-        chunk_overlap=150,
+        chunk_size=800,
+        chunk_overlap=100,
         length_function=len,
     )
 
@@ -31,19 +31,25 @@ def split_text(docs: list[Document]):
 
 
 def chroma(chunks: list[Document], path: str):
-    if os.path.exists(path):
-        shutil.rmtree(path)
+    abs_path = os.path.abspath(path)
+
+    if os.path.exists(abs_path):
+        shutil.rmtree(abs_path, ignore_errors=True)
+
+    os.makedirs(abs_path, exist_ok=True)
+
+    embeddings = HuggingFaceEmbeddings(
+        model_name="sentence-transformers/all-mpnet-base-v2"
+    )
 
     db = Chroma.from_documents(
         documents=chunks,
-        embedding=HuggingFaceEmbeddings(
-            model_name="sentence-transformers/all-mpnet-base-v2"
-        ),
-        persist_directory=path,
+        embedding=embeddings,
+        persist_directory=abs_path,
     )
 
     db.persist()
-    print(f"Saved {len(chunks)} chunks to {path}")
+    print(f"Saved {len(chunks)} chunks to {abs_path}")
 
 
 def generate_store(path: str, chroma_path: str):
