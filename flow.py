@@ -75,6 +75,7 @@ Requirement:
 
 Return the Ethical User Story exactly in the specified format.
 
+EXAMPLE:
 Title: Human Review of High Impact Decisions
 
 Description:
