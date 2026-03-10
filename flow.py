@@ -75,6 +75,8 @@ Rules:
 - Work items must be specific, practical, and implementable.
 - Avoid vague expressions such as "ensure transparency", "promote fairness", "support accountability", or "be ethical".
 - Focus on concrete system behavior, user interface elements, logs, validations, stored data, notifications, review steps, or access controls.
+- Avoid process-oriented tasks such as "research", "discuss", or "establish policies".
+- Work items should describe system functionality whenever possible.
 
 Context:
 {context}
