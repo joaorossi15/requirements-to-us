@@ -15,45 +15,6 @@ LLM-based tool powered by Mistral v0.3 that transforms high-level ethical requir
 - Get the `main.ipynb` file from the repository
 - Run the cells and change the `query` variable to the desired input
 
-## Run Locally
-**Recommended to run on google colab given the size of the model**
-
-Clone the project
-
-```bash
-  git clone https://github.com/joaorossi15/requirements-to-us.git
-```
-
-Go to the project directory
-
-```bash
-  cd requirements-to-us
-```
-
-Create and start a virtual enviroment
-
-```bash
-  python3 -m venv env
-  source bin/env/activate
-```
-
-Install dependencies
-
-```bash
-  pip3 install -r requirements.txt
-```
-
-Run the jupyter notebook
-
-```bash
-  jupyter-notebook main.ipynb
-```
-
-
-## Authors
-
-- [@joaorossi15](https://www.github.com/joaorossi15)
-
 
 ## License
 
